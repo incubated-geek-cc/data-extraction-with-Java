@@ -3,7 +3,7 @@
 #### What this is - A Java application to read Excel data files & datatables embedded in Outlook emails. 3 main module(s):
 * ExcelToCSV
 * OutlookToCSV
-![OutlookToCSV](https://miro.medium.com/max/1050/1*UpskUXelTpzm5rd_GqDs9A.)
+![OutlookToCSV](https://miro.medium.com/max/3600/1*UpskUXelTpzm5rd_GqDs9A.png)
 * ZipToExcel
 ![ZipToExcel](https://miro.medium.com/max/1050/1*NeSZLIZebzV0qP38rg8DQQ.png)
 
