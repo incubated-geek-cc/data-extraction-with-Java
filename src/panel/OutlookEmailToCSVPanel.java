@@ -41,13 +41,6 @@ public class OutlookEmailToCSVPanel extends JPanel {
     private static SpinnerModel jSpinnerInputHeaderCountModel = new SpinnerNumberModel(13, 1, 100, 1);
     private static JSpinner jSpinnerInputHeaderCount;
 
-    // CSV output specifications
-    private static JLabel jLabelTextInputDelimiterChoice;
-    private static JComboBox jComboBoxDelimiterChoice;
-
-    private static JLabel jLabelTextQualifierChoice;
-    private static JComboBox jComboBoxTextQualifierChoice;
-
     // OUTPUT LOGS
     private static final JTextArea LOG_TEXT_AREA = new JTextArea();
     private static JScrollPane jScrollPane1OutputFileLogs;
@@ -101,14 +94,6 @@ public class OutlookEmailToCSVPanel extends JPanel {
 
         jButtonRun = new JButton("Run >>");
 
-        Object[] textDelimiters = {',', ';', '|'};
-        jLabelTextInputDelimiterChoice = new JLabel("CSV Delimiter");
-        jComboBoxDelimiterChoice = new JComboBox(textDelimiters);
-
-        Object[] textQualifiers = {'"', '\'', null};
-        jLabelTextQualifierChoice = new JLabel("CSV Text Qualifier");
-        jComboBoxTextQualifierChoice = new JComboBox(textQualifiers);
-
         jLabelFileChooserText = new JLabel("Select input file(s)");
         jLabelInputHeaderCount = new JLabel("No. of header field(s)");
 
@@ -122,14 +107,8 @@ public class OutlookEmailToCSVPanel extends JPanel {
         add(jLabelFileChooserText);
         add(jButtonSelectInputFiles);
 
-        add(jLabelTextInputDelimiterChoice);
-        add(jComboBoxDelimiterChoice);
-
         add(jLabelInputHeaderCount);
         add(jSpinnerInputHeaderCount);
-
-        add(jLabelTextQualifierChoice);
-        add(jComboBoxTextQualifierChoice);
 
         add(jButtonRemoveSelectedFiles);
         add(jLabelFileListSelected);
@@ -144,15 +123,8 @@ public class OutlookEmailToCSVPanel extends JPanel {
         jLabelFileChooserText.setBounds(20, 15, 795, 30);
         jButtonSelectInputFiles.setBounds(160, 15, 130, 30);
 
-        // specifications
-        jLabelTextInputDelimiterChoice.setBounds(20, 50, 795, 30);
-        jComboBoxDelimiterChoice.setBounds(160, 50, 130, 30);
-
-        jLabelTextQualifierChoice.setBounds(20, 85, 795, 30);
-        jComboBoxTextQualifierChoice.setBounds(160, 85, 130, 30);
-
-        jLabelInputHeaderCount.setBounds(20, 120, 795, 30);
-        jSpinnerInputHeaderCount.setBounds(160, 120, 130, 30);
+        jLabelInputHeaderCount.setBounds(20, 50, 795, 30);
+        jSpinnerInputHeaderCount.setBounds(160, 50, 130, 30);
 
         jButtonRemoveSelectedFiles.setBounds(665, 15, 130, 30);
         jLabelFileListSelected.setBounds(395, 15, 200, 30);
@@ -238,11 +210,12 @@ public class OutlookEmailToCSVPanel extends JPanel {
         jButtonRemoveSelectedFiles.setEnabled(false);
 
         outputConsoleLogsBreakline(LOGGER, "");
-        outputConsoleLogsBreakline(LOGGER, "Initialising Outlook Email Extractor App");
+        outputConsoleLogsBreakline(LOGGER, "Initialising Outlook Email Data Extractor");
         outputConsoleLogsBreakline(LOGGER, "");
-
+        updateLogs();
         try {
             outputConsoleLogsBreakline(LOGGER, "Reading in Outlook files");
+            updateLogs();
             // ================================================= READ IN FILES ================================
             inputOutlook(INPUT_FILES);
             JFileChooser saveFileChooser = new JFileChooser();
@@ -278,7 +251,7 @@ public class OutlookEmailToCSVPanel extends JPanel {
         String outlookFileName = "";
         String outlookFilePath = "";
 
-        outputArchiveZip = new File("output_" + getCurrentTimeStamp() + ".zip");
+        outputArchiveZip = new File("OutlookEmailToCSV_" + getCurrentTimeStamp() + ".zip");
         try (FileOutputStream fos = new FileOutputStream(outputArchiveZip)) {
             ZipOutputStream zipOut = new ZipOutputStream(fos);
 
@@ -289,7 +262,10 @@ public class OutlookEmailToCSVPanel extends JPanel {
             for (File outlookFile : outlookFiles) {
                 outlookFileName = outlookFile.getName();
                 outlookFilePath = outlookFile.getAbsolutePath();
-
+                
+                outputConsoleLogsBreakline(LOGGER, "Processing "+outlookFileName);
+                updateLogs();
+                
                 MsgParser msgp = new MsgParser();
                 String bodyText = "";
                 if (outlookFile.getName().endsWith(".msg")) {
@@ -306,9 +282,9 @@ public class OutlookEmailToCSVPanel extends JPanel {
                 os.write(0xbb);
                 os.write(0xbf);
 
-                char textDelimiter = (char) jComboBoxDelimiterChoice.getSelectedItem();
-                char textQualifier = (char) jComboBoxTextQualifierChoice.getSelectedItem();
-                writer = new CSVWriter(new OutputStreamWriter(os), textDelimiter, textQualifier);
+                /*char textDelimiter = (char) jComboBoxDelimiterChoice.getSelectedItem();
+                char textQualifier = (char) jComboBoxTextQualifierChoice.getSelectedItem();*/
+                writer = new CSVWriter(new OutputStreamWriter(os), ',', '"');
                 int counter = 0;
                 ArrayList<String> values = new ArrayList<String>();
                 for (String str : strArr) {

@@ -31,7 +31,7 @@ public class Util {
     }
 
     public static String getCurrentTimeStamp() {
-        SimpleDateFormat sdf = new SimpleDateFormat("(dd-MMM-yyyy hh.mmaa)");
+        SimpleDateFormat sdf = new SimpleDateFormat("(dd-MMM-yyyy_hhmmaa)");
         Date date = new Date();
         String timestamp = sdf.format(date);
 

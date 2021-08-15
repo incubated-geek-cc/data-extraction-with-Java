@@ -10,6 +10,7 @@ import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 import panel.MergePdfFilesPanel;
 import panel.OutlookEmailToCSVPanel;
+import panel.ZipToExcelPanel;
 
 public class Main {
 
@@ -47,8 +48,11 @@ public class Main {
       JPanel panel_1 = new OutlookEmailToCSVPanel(APP_FRAME);
       addTabPanel(panel_1, "Outlook to CSV", "Extract Outlook Table Content to CSV", 1);
       
-      JPanel panel_2 = new MergePdfFilesPanel(APP_FRAME);
-      addTabPanel(panel_2, "Merge Pdf Docs", "Merge multiple Pdf File(s) into one", 2);
+      JPanel panel_2 = new ZipToExcelPanel(APP_FRAME);
+      addTabPanel(panel_2, "Extract Zip Data to Excel", "Extract Archived CSV(s) to Excel", 2);
+      
+      JPanel panel_3 = new MergePdfFilesPanel(APP_FRAME);
+      addTabPanel(panel_3, "Merge Pdf Docs", "Merge multiple Pdf File(s) into one", 3);
    }
    
    private static void addTabPanel(JPanel panel, String tabLabel, String tabTooltip, int tabIndex) {

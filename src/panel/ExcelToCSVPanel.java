@@ -51,12 +51,6 @@ public class ExcelToCSVPanel extends JPanel {
     private static JLabel jLabelFileListSelected;
 
     // CSV output specifications
-    private static JLabel jLabelTextInputDelimiterChoice;
-    private static JComboBox jComboBoxDelimiterChoice;
-
-    private static JLabel jLabelTextQualifierChoice;
-    private static JComboBox jComboBoxTextQualifierChoice;
-
     private static JButton jButtonSelectInputFiles;
     private static JButton jButtonResetAll;
     private static JButton jButtonRemoveSelectedFiles;
@@ -75,7 +69,7 @@ public class ExcelToCSVPanel extends JPanel {
         LOGGER.setLevel(Level.ALL);
         LOGGER.addHandler(new TextAreaHandler(new TextAreaOutputStream(LOG_TEXT_AREA)));
 
-        LOGGER.info(() -> "Welcome to Excel Data Extractor.");
+        LOGGER.info(() -> "Welcome to Excel To CSV Data Extractor.");
 
         // INPUT FILES SELECTED
         jListInputFilesSelected = new JList<>(jListInputFilesSelectedModel);
@@ -103,26 +97,12 @@ public class ExcelToCSVPanel extends JPanel {
         jLabelFileListSelected = new JLabel("List of input files selected:");
         jLabelOutputFileLogsTitle = new JLabel("Output File Log(s):");
 
-        Object[] textDelimiters = {',', ';', '|'};
-        jLabelTextInputDelimiterChoice = new JLabel("CSV Delimiter");
-        jComboBoxDelimiterChoice = new JComboBox(textDelimiters);
-
-        Object[] textQualifiers = {'"', '\'', null};
-        jLabelTextQualifierChoice = new JLabel("CSV Text Qualifier");
-        jComboBoxTextQualifierChoice = new JComboBox(textQualifiers);
-
         // set components properties
         jButtonRun.setEnabled(false);
 
         //add components
         add(jLabelFileChooserText);
         add(jButtonSelectInputFiles);
-
-        add(jLabelTextInputDelimiterChoice);
-        add(jComboBoxDelimiterChoice);
-
-        add(jLabelTextQualifierChoice);
-        add(jComboBoxTextQualifierChoice);
 
         add(jButtonRemoveSelectedFiles);
         add(jLabelFileListSelected);
@@ -136,13 +116,6 @@ public class ExcelToCSVPanel extends JPanel {
         // set component bounds (only needed by Absolute Positioning)
         jLabelFileChooserText.setBounds(20, 15, 795, 30);
         jButtonSelectInputFiles.setBounds(160, 15, 130, 30);
-
-        // specifications
-        jLabelTextInputDelimiterChoice.setBounds(20, 50, 795, 30);
-        jComboBoxDelimiterChoice.setBounds(160, 50, 130, 30);
-
-        jLabelTextQualifierChoice.setBounds(20, 85, 795, 30);
-        jComboBoxTextQualifierChoice.setBounds(160, 85, 130, 30);
 
         jButtonRemoveSelectedFiles.setBounds(665, 15, 130, 30);
         jLabelFileListSelected.setBounds(395, 15, 200, 30);
@@ -218,7 +191,7 @@ public class ExcelToCSVPanel extends JPanel {
         jListInputFilesSelectedModel.clear();
         INPUT_FILES.clear();
         LOG_TEXT_AREA.setText("");
-        LOGGER.info(() -> "Welcome to Excel Data Extractor.");
+        LOGGER.info(() -> "Welcome to Excel To CSV Extractor App.");
     }
 
     private void runAppAction(ActionEvent e) {
@@ -227,7 +200,7 @@ public class ExcelToCSVPanel extends JPanel {
         jButtonRemoveSelectedFiles.setEnabled(false);
 
         outputConsoleLogsBreakline(LOGGER, "");
-        outputConsoleLogsBreakline(LOGGER, "Initialising Excel Data App");
+        outputConsoleLogsBreakline(LOGGER, "Initialising Excel To CSV Extractor App");
         outputConsoleLogsBreakline(LOGGER, "");
 
         try {
@@ -271,7 +244,7 @@ public class ExcelToCSVPanel extends JPanel {
         String excelFilePath = "";
         Workbook workbook = null;
 
-        outputArchiveZip = new File("output_" + getCurrentTimeStamp() + ".zip");
+        outputArchiveZip = new File("ExcelToCSV_" + getCurrentTimeStamp() + ".zip");
         try (FileOutputStream fos = new FileOutputStream(outputArchiveZip)) {
             ZipOutputStream zipOut = new ZipOutputStream(fos);
 
@@ -301,9 +274,9 @@ public class ExcelToCSVPanel extends JPanel {
                     os.write(0xbb);
                     os.write(0xbf);
                     
-                    char textDelimiter = (char) jComboBoxDelimiterChoice.getSelectedItem();
-                    char textQualifier = (char) jComboBoxTextQualifierChoice.getSelectedItem();
-                    writer = new CSVWriter(new OutputStreamWriter(os), textDelimiter, textQualifier);
+                    /*char textDelimiter = (char) jComboBoxDelimiterChoice.getSelectedItem();
+                    char textQualifier = (char) jComboBoxTextQualifierChoice.getSelectedItem();*/
+                    writer = new CSVWriter(new OutputStreamWriter(os), ',', '"');
                     for (int r = sheet.getFirstRowNum(); r <= sheet.getLastRowNum(); r++) {
                         Row row = sheet.getRow(r);
                         if (row != null) {

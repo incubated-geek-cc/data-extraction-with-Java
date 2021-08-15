@@ -190,11 +190,14 @@ public class MergePdfFilesPanel extends JPanel {
         jButtonRemoveSelectedFiles.setEnabled(false);
 
         outputConsoleLogsBreakline(LOGGER, "");
-        outputConsoleLogsBreakline(LOGGER, "Initialising Pdf Merger App");
+        outputConsoleLogsBreakline(LOGGER, "Initialising Pdf Merger");
         outputConsoleLogsBreakline(LOGGER, "");
-
+        updateLogs();
+        
         try {
             outputConsoleLogsBreakline(LOGGER, "Reading in pdf files");
+            updateLogs();
+            
             // ================================================= READ IN FILES ================================
             PDFMerger = new PDFMergerUtility();
             String destinationFileName="output_" + getCurrentTimeStamp() + ".pdf";
@@ -258,7 +261,8 @@ public class MergePdfFilesPanel extends JPanel {
             LOGGER.log(Level.SEVERE, null, ex);
         }
         outputConsoleLogsBreakline(LOGGER, "Pdf Documents have been merged successfully.");
-
+        updateLogs();
+        
         for (PDDocument pdfDoc : pdfDocs) {
             try {
                 pdfDoc.close();
