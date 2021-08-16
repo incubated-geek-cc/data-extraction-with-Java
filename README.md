@@ -26,4 +26,4 @@ poi-scratchpad-3.15.jar | To Read Outlook Email Files
 msgparser-1.1.15.jar | To Read Outlook Email Files
 commons-logging-1.2.jar | Dependency of poi-scratchpad-3.15.jar library
 
-#### Article at: https://geek-cc.medium.com/extracting-data-from-excel-and-outlook-files-with-java-7979eb64edff
+#### Article at: https://towardsdatascience.com/extracting-data-from-excel-and-outlook-files-with-java-7979eb64edff
