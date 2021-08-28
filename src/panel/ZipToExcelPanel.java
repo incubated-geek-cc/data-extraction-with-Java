@@ -1,5 +1,6 @@
 package panel;
 
+import util.UtilityManager;
 import au.com.bytecode.opencsv.CSVReader;
 import java.awt.*;
 import java.io.File;
@@ -7,7 +8,6 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
-import javax.swing.text.DefaultCaret;
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.awt.event.ActionEvent;
@@ -15,11 +15,9 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.lang.invoke.MethodHandles;
 import java.nio.charset.StandardCharsets;
 import java.util.Enumeration;
 import java.util.logging.Level;
-import java.util.logging.Logger;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 import org.apache.poi.ss.usermodel.Cell;
@@ -27,15 +25,12 @@ import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
-import static panel.Util.copy;
-import static panel.Util.getCurrentTimeStamp;
-import static panel.Util.outputConsoleLogsBreakline;
+import static util.UtilityManager.copy;
+import static util.UtilityManager.getCurrentTimeStamp;
 
 public class ZipToExcelPanel extends JPanel {
-
+    private final UtilityManager UTILITY_MGR;
     private final JFrame APP_FRAME;
-    private static final String LOGGER_NAME = MethodHandles.lookup().lookupClass().getName();
-    private static final Logger LOGGER = Logger.getLogger(LOGGER_NAME);
 
     // input files selected
     DefaultListModel jListInputFilesSelectedModel = new DefaultListModel<>();
@@ -43,21 +38,14 @@ public class ZipToExcelPanel extends JPanel {
     private static JScrollPane jScrollPane1FileListItems;
 
     // OUTPUT LOGS
-    private static final JTextArea LOG_TEXT_AREA = new JTextArea();
-    private static JScrollPane jScrollPane1OutputFileLogs;
+    private static JTextArea LOG_TEXT_AREA;
+    private static JScrollPane JSCROLL_PANEL_OUTPUT_LOGS;
 
     private static JLabel jLabelFileChooserText;
 
     private static JLabel jLabelOutputFileLogsTitle;
     private static JLabel jLabelFileListSelected;
-
-    // CSV output specifications
-    private static JLabel jLabelTextInputDelimiterChoice;
-    private static JComboBox jComboBoxDelimiterChoice;
-
-    private static JLabel jLabelTextQualifierChoice;
-    private static JComboBox jComboBoxTextQualifierChoice;
-
+    
     private static JButton jButtonSelectInputFiles;
     private static JButton jButtonResetAll;
     private static JButton jButtonRemoveSelectedFiles;
@@ -74,27 +62,18 @@ public class ZipToExcelPanel extends JPanel {
     public ZipToExcelPanel(JFrame APP_FRAME) {
         super();
         this.APP_FRAME = APP_FRAME;
-        LOGGER.setUseParentHandlers(false);
-        LOGGER.setLevel(Level.ALL);
-        LOGGER.addHandler(new TextAreaHandler(new TextAreaOutputStream(LOG_TEXT_AREA)));
-
-        LOGGER.info(() -> "Welcome to Zip to Excel Data Extractor.");
+        LOG_TEXT_AREA = new JTextArea();
+        LOG_TEXT_AREA.setEditable(false);
+        LOG_TEXT_AREA.setWrapStyleWord(true);
+        JSCROLL_PANEL_OUTPUT_LOGS = new JScrollPane(LOG_TEXT_AREA);
+        UTILITY_MGR=new UtilityManager(LOG_TEXT_AREA,JSCROLL_PANEL_OUTPUT_LOGS); // so all logs are handled by the same panel
+        
+        UTILITY_MGR.getLogger().info(() ->  "Welcome to Zip to Excel Data Extractor.");
         
         // INPUT FILES SELECTED
         jListInputFilesSelected = new JList<>(jListInputFilesSelectedModel);
         jScrollPane1FileListItems = new JScrollPane(jListInputFilesSelected);
-
-        // OUTPUT LOGS
-        LOG_TEXT_AREA.setEditable(false);
-        LOG_TEXT_AREA.setWrapStyleWord(true);
-        jScrollPane1OutputFileLogs = new JScrollPane(LOG_TEXT_AREA);
-
-        updateLogs();
-        jScrollPane1OutputFileLogs.setHorizontalScrollBar(null);
-
-        DefaultCaret caret = (DefaultCaret) LOG_TEXT_AREA.getCaret();
-        caret.setUpdatePolicy(DefaultCaret.ALWAYS_UPDATE);
-
+ 
         // ACTIONABLE BUTTONS
         jButtonSelectInputFiles = new JButton("Choose File(s)");
         jButtonRemoveSelectedFiles = new JButton("Remove File");
@@ -119,7 +98,7 @@ public class ZipToExcelPanel extends JPanel {
 
         add(jButtonRun);
         add(jLabelOutputFileLogsTitle);
-        add(jScrollPane1OutputFileLogs);
+        add(JSCROLL_PANEL_OUTPUT_LOGS);
         add(jButtonResetAll);
 
         // set component bounds (only needed by Absolute Positioning)
@@ -132,7 +111,7 @@ public class ZipToExcelPanel extends JPanel {
 
         jButtonRun.setBounds(20, 215, 130, 30);
         jLabelOutputFileLogsTitle.setBounds(20, 255, 775, 30);
-        jScrollPane1OutputFileLogs.setBounds(20, 285, 775, 220);
+        JSCROLL_PANEL_OUTPUT_LOGS.setBounds(20, 285, 775, 220);
 
         jButtonResetAll.setBounds(665, 515, 130, 30);
 
@@ -198,7 +177,7 @@ public class ZipToExcelPanel extends JPanel {
         jListInputFilesSelectedModel.clear();
         INPUT_FILES.clear();
         LOG_TEXT_AREA.setText("");
-        LOGGER.info(() -> "Welcome to Zip to Excel Data Extractor.");
+        UTILITY_MGR.getLogger().info(() -> "Welcome to Zip to Excel Data Extractor.");
     }
 
     private void runAppAction(ActionEvent e) {
@@ -208,13 +187,13 @@ public class ZipToExcelPanel extends JPanel {
         jButtonResetAll.setEnabled(false);
         jButtonRemoveSelectedFiles.setEnabled(false);
 
-        outputConsoleLogsBreakline(LOGGER, "");
-        outputConsoleLogsBreakline(LOGGER, "Initialising Zip to Excel Data Extractor");
-        outputConsoleLogsBreakline(LOGGER, "");
-        updateLogs();
+        UTILITY_MGR.outputConsoleLogsBreakline("");
+        UTILITY_MGR.outputConsoleLogsBreakline("Initialising Zip to Excel Data Extractor");
+        UTILITY_MGR.outputConsoleLogsBreakline("");
+        UTILITY_MGR.updateLogs();
         
         try {
-            outputConsoleLogsBreakline(LOGGER, "Reading in Zip files");
+            UTILITY_MGR.outputConsoleLogsBreakline("Reading in Zip files");
             // ================================================= READ IN FILES ================================
             inputZipFiles(INPUT_FILES);
             JFileChooser saveFileChooser = new JFileChooser();
@@ -237,9 +216,9 @@ public class ZipToExcelPanel extends JPanel {
                 }
             }
         } catch (EncryptedDocumentException ex) {
-            LOGGER.log(Level.SEVERE, null, ex);
+            UTILITY_MGR.getLogger().log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
-            LOGGER.log(Level.SEVERE, null, ex);
+            UTILITY_MGR.getLogger().log(Level.SEVERE, null, ex);
         }
 
         jButtonRun.setEnabled(false);
@@ -248,7 +227,7 @@ public class ZipToExcelPanel extends JPanel {
         jButtonSelectInputFiles.setEnabled(true);
     }
 
-    private static void inputZipFiles(ArrayList<File> zipFiles) 
+    private void inputZipFiles(ArrayList<File> zipFiles) 
             throws EncryptedDocumentException, 
             IOException, 
             FileNotFoundException {
@@ -259,11 +238,11 @@ public class ZipToExcelPanel extends JPanel {
         } // for-loop each ZipFile
     }
     
-    private static void readZipFile(ZipFile zipFile) throws IOException { // for each zip archive
+    private void readZipFile(ZipFile zipFile) throws IOException { // for each zip archive
         String zipPath=zipFile.getName();
         String nameOfSheet=zipPath.substring(zipPath.lastIndexOf('\\')+1, zipPath.lastIndexOf("."));
-        outputConsoleLogsBreakline(LOGGER, ("Processing "+nameOfSheet+" Archive"));
-        updateLogs();
+        UTILITY_MGR.outputConsoleLogsBreakline(("Processing "+nameOfSheet+" Archive"));
+        UTILITY_MGR.updateLogs();
         
         if(nameOfSheet.length()>30) {
             nameOfSheet = nameOfSheet.substring(0,30);
@@ -316,12 +295,5 @@ public class ZipToExcelPanel extends JPanel {
         FileOutputStream out = new FileOutputStream(outputCompiledExcel);
         workbook.write(out);
         out.close();
-    }
-    
-    private static void updateLogs() {
-        jScrollPane1OutputFileLogs.getVerticalScrollBar().setValue(jScrollPane1OutputFileLogs.getVerticalScrollBar().getMaximum());
-        jScrollPane1OutputFileLogs.getVerticalScrollBar().paint(jScrollPane1OutputFileLogs.getVerticalScrollBar().getGraphics());
-        LOG_TEXT_AREA.scrollRectToVisible(LOG_TEXT_AREA.getVisibleRect());
-        LOG_TEXT_AREA.paint(LOG_TEXT_AREA.getGraphics());
     }
 }

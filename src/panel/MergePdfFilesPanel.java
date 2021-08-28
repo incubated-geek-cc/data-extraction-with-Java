@@ -1,29 +1,24 @@
 package panel;
 
+import util.UtilityManager;
 import java.awt.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
-import javax.swing.text.DefaultCaret;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
-import java.lang.invoke.MethodHandles;
 import java.util.HashMap;
 import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.apache.pdfbox.multipdf.PDFMergerUtility;
 import org.apache.pdfbox.pdmodel.PDDocument;
-import static panel.Util.copy;
-import static panel.Util.getCurrentTimeStamp;
-import static panel.Util.outputConsoleLogsBreakline;
+import static util.UtilityManager.copy;
+import static util.UtilityManager.getCurrentTimeStamp;
 
 public class MergePdfFilesPanel extends JPanel {
-
+    private final UtilityManager UTILITY_MGR;
     private final JFrame APP_FRAME;
-    private static final String LOGGER_NAME = MethodHandles.lookup().lookupClass().getName();
-    private static final Logger LOGGER = Logger.getLogger(LOGGER_NAME);
 
     // input files selected
     DefaultListModel jListInputFilesSelectedModel = new DefaultListModel<>();
@@ -31,8 +26,8 @@ public class MergePdfFilesPanel extends JPanel {
     private static JScrollPane jScrollPane1FileListItems;
 
     // OUTPUT LOGS
-    private static final JTextArea LOG_TEXT_AREA = new JTextArea();
-    private static JScrollPane jScrollPane1OutputFileLogs;
+    private final JTextArea LOG_TEXT_AREA;
+    private final JScrollPane JSCROLL_PANEL_OUTPUT_LOGS;
 
     private static JLabel jLabelFileChooserText;
 
@@ -54,26 +49,17 @@ public class MergePdfFilesPanel extends JPanel {
     public MergePdfFilesPanel(JFrame APP_FRAME) {
         super();
         this.APP_FRAME = APP_FRAME;
-        LOGGER.setUseParentHandlers(false);
-        LOGGER.setLevel(Level.ALL);
-        LOGGER.addHandler(new TextAreaHandler(new TextAreaOutputStream(LOG_TEXT_AREA)));
-
-        LOGGER.info(() -> "Welcome to Pdf Merger.");
+        LOG_TEXT_AREA = new JTextArea();
+        LOG_TEXT_AREA.setEditable(false);
+        LOG_TEXT_AREA.setWrapStyleWord(true);
+        JSCROLL_PANEL_OUTPUT_LOGS = new JScrollPane(LOG_TEXT_AREA);
+        UTILITY_MGR=new UtilityManager(LOG_TEXT_AREA,JSCROLL_PANEL_OUTPUT_LOGS); // so all logs are handled by the same panel
+        
+        UTILITY_MGR.getLogger().info(() -> "Welcome to Pdf Merger.");
 
         // INPUT FILES SELECTED
         jListInputFilesSelected = new JList<>(jListInputFilesSelectedModel);
         jScrollPane1FileListItems = new JScrollPane(jListInputFilesSelected);
-
-        // OUTPUT LOGS
-        LOG_TEXT_AREA.setEditable(false);
-        LOG_TEXT_AREA.setWrapStyleWord(true);
-        jScrollPane1OutputFileLogs = new JScrollPane(LOG_TEXT_AREA);
-
-        updateLogs();
-        jScrollPane1OutputFileLogs.setHorizontalScrollBar(null);
-
-        DefaultCaret caret = (DefaultCaret) LOG_TEXT_AREA.getCaret();
-        caret.setUpdatePolicy(DefaultCaret.ALWAYS_UPDATE);
 
         // ACTIONABLE BUTTONS
         jButtonSelectInputFiles = new JButton("Choose File(s)");
@@ -100,7 +86,7 @@ public class MergePdfFilesPanel extends JPanel {
         
         add(jButtonRun);
         add(jLabelOutputFileLogsTitle);
-        add(jScrollPane1OutputFileLogs);
+        add(JSCROLL_PANEL_OUTPUT_LOGS);
         add(jButtonResetAll);
 
         //set component bounds (only needed by Absolute Positioning)
@@ -115,7 +101,7 @@ public class MergePdfFilesPanel extends JPanel {
 
         jButtonRun.setBounds(20, 215, 130, 30);
         jLabelOutputFileLogsTitle.setBounds(20, 255, 775, 30);
-        jScrollPane1OutputFileLogs.setBounds(20, 285, 775, 220);
+        JSCROLL_PANEL_OUTPUT_LOGS.setBounds(20, 285, 775, 220);
 
         jButtonResetAll.setBounds(665, 515, 130, 30);
 
@@ -181,7 +167,7 @@ public class MergePdfFilesPanel extends JPanel {
         jListInputFilesSelectedModel.clear();
         INPUT_FILES.clear();
         LOG_TEXT_AREA.setText("");
-        LOGGER.info(() -> "Welcome to Pdf Merger.");
+        UTILITY_MGR.getLogger().info(() -> "Welcome to Pdf Merger.");
     }
 
     private void runAppAction(ActionEvent e) {
@@ -189,14 +175,14 @@ public class MergePdfFilesPanel extends JPanel {
         jButtonResetAll.setEnabled(false);
         jButtonRemoveSelectedFiles.setEnabled(false);
 
-        outputConsoleLogsBreakline(LOGGER, "");
-        outputConsoleLogsBreakline(LOGGER, "Initialising Pdf Merger");
-        outputConsoleLogsBreakline(LOGGER, "");
-        updateLogs();
+        UTILITY_MGR.outputConsoleLogsBreakline("");
+        UTILITY_MGR.outputConsoleLogsBreakline("Initialising Pdf Merger");
+        UTILITY_MGR.outputConsoleLogsBreakline("");
+        UTILITY_MGR.updateLogs();
         
         try {
-            outputConsoleLogsBreakline(LOGGER, "Reading in pdf files");
-            updateLogs();
+            UTILITY_MGR.outputConsoleLogsBreakline("Reading in pdf files");
+            UTILITY_MGR.updateLogs();
             
             // ================================================= READ IN FILES ================================
             PDFMerger = new PDFMergerUtility();
@@ -226,7 +212,7 @@ public class MergePdfFilesPanel extends JPanel {
                 }
             }
         } catch (IOException ex) {
-            LOGGER.log(Level.SEVERE, null, ex);
+            UTILITY_MGR.getLogger().log(Level.SEVERE, null, ex);
         }
         jButtonRun.setEnabled(false);
         jButtonRemoveSelectedFiles.setEnabled(true);
@@ -234,7 +220,7 @@ public class MergePdfFilesPanel extends JPanel {
         jButtonSelectInputFiles.setEnabled(true);
     }
 
-    private static void mergePdfDocuments(ArrayList<File> pdfFilesToMerge) throws FileNotFoundException {
+    private void mergePdfDocuments(ArrayList<File> pdfFilesToMerge) throws FileNotFoundException {
         ArrayList<PDDocument> pdfDocs = new ArrayList<PDDocument>();
         
         for (File pdfFile : pdfFilesToMerge) {
@@ -242,10 +228,10 @@ public class MergePdfFilesPanel extends JPanel {
             PDDocument pdfDocument = null;
             try {
                 pdfDocument = PDDocument.load(pdfFile);
-                outputConsoleLogsBreakline(LOGGER, "Reading " + pdfFile.getName());
-                updateLogs();
+                UTILITY_MGR.outputConsoleLogsBreakline("Reading " + pdfFile.getName());
+                UTILITY_MGR.updateLogs();
             } catch (IOException ex) {
-                LOGGER.log(Level.SEVERE, null, ex);
+                UTILITY_MGR.getLogger().log(Level.SEVERE, null, ex);
             }
             files.put("File", pdfFile);
             files.put("PDF", pdfDocument);
@@ -258,24 +244,17 @@ public class MergePdfFilesPanel extends JPanel {
         try {
             PDFMerger.mergeDocuments();
         } catch (IOException ex) {
-            LOGGER.log(Level.SEVERE, null, ex);
+            UTILITY_MGR.getLogger().log(Level.SEVERE, null, ex);
         }
-        outputConsoleLogsBreakline(LOGGER, "Pdf Documents have been merged successfully.");
-        updateLogs();
+        UTILITY_MGR.outputConsoleLogsBreakline("Pdf Documents have been merged successfully.");
+        UTILITY_MGR.updateLogs();
         
         for (PDDocument pdfDoc : pdfDocs) {
             try {
                 pdfDoc.close();
             } catch (IOException ex) {
-                LOGGER.log(Level.SEVERE, null, ex);
+                UTILITY_MGR.getLogger().log(Level.SEVERE, null, ex);
             }
         }
-    }
-
-    private static void updateLogs() {
-        jScrollPane1OutputFileLogs.getVerticalScrollBar().setValue(jScrollPane1OutputFileLogs.getVerticalScrollBar().getMaximum());
-        jScrollPane1OutputFileLogs.getVerticalScrollBar().paint(jScrollPane1OutputFileLogs.getVerticalScrollBar().getGraphics());
-        LOG_TEXT_AREA.scrollRectToVisible(LOG_TEXT_AREA.getVisibleRect());
-        LOG_TEXT_AREA.paint(LOG_TEXT_AREA.getGraphics());
     }
 }

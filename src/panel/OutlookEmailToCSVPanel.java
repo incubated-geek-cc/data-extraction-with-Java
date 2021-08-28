@@ -1,5 +1,6 @@
 package panel;
 
+import util.UtilityManager;
 import au.com.bytecode.opencsv.CSVWriter;
 import com.auxilii.msgparser.Message;
 import com.auxilii.msgparser.MsgParser;
@@ -10,27 +11,21 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
-import javax.swing.text.DefaultCaret;
 import java.awt.event.ActionEvent;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
-import java.lang.invoke.MethodHandles;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.util.logging.Level;
-import java.util.logging.Logger;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
-import static panel.Util.copy;
-import static panel.Util.getCurrentTimeStamp;
-import static panel.Util.outputConsoleLogsBreakline;
+import static util.UtilityManager.copy;
+import static util.UtilityManager.getCurrentTimeStamp;
 
 public class OutlookEmailToCSVPanel extends JPanel {
-
+    private final UtilityManager UTILITY_MGR;
     private final JFrame APP_FRAME;
-    private static final String LOGGER_NAME = MethodHandles.lookup().lookupClass().getName();
-    private static final Logger LOGGER = Logger.getLogger(LOGGER_NAME);
 
     // input files selected
     DefaultListModel jListInputFilesSelectedModel = new DefaultListModel<>();
@@ -38,12 +33,12 @@ public class OutlookEmailToCSVPanel extends JPanel {
     private static JScrollPane jScrollPane1FileListItems;
 
     //initial value, minimum value, maximum value, step
-    private static SpinnerModel jSpinnerInputHeaderCountModel = new SpinnerNumberModel(13, 1, 100, 1);
+    private static final SpinnerModel JSPINNER_INPUT_HEADER_COUNT_MODEL = new SpinnerNumberModel(13, 1, 100, 1);
     private static JSpinner jSpinnerInputHeaderCount;
 
     // OUTPUT LOGS
-    private static final JTextArea LOG_TEXT_AREA = new JTextArea();
-    private static JScrollPane jScrollPane1OutputFileLogs;
+    private static JTextArea LOG_TEXT_AREA;
+    private static JScrollPane JSCROLL_PANEL_OUTPUT_LOGS;
 
     private static JLabel jLabelFileChooserText;
     private static JLabel jLabelInputHeaderCount;
@@ -63,30 +58,21 @@ public class OutlookEmailToCSVPanel extends JPanel {
     public OutlookEmailToCSVPanel(JFrame APP_FRAME) {
         super();
         this.APP_FRAME = APP_FRAME;
-        LOGGER.setUseParentHandlers(false);
-        LOGGER.setLevel(Level.ALL);
-        LOGGER.addHandler(new TextAreaHandler(new TextAreaOutputStream(LOG_TEXT_AREA)));
-
-        LOGGER.info(() -> "Welcome to Outlook Email Data Extractor.");
+        LOG_TEXT_AREA = new JTextArea();
+        LOG_TEXT_AREA.setEditable(false);
+        LOG_TEXT_AREA.setWrapStyleWord(true);
+        JSCROLL_PANEL_OUTPUT_LOGS = new JScrollPane(LOG_TEXT_AREA);
+        UTILITY_MGR=new UtilityManager(LOG_TEXT_AREA,JSCROLL_PANEL_OUTPUT_LOGS); // so all logs are handled by the same panel
+        
+        UTILITY_MGR.getLogger().info(() -> "Welcome to Outlook Email Data Extractor.");
 
         // INPUT FILES SELECTED
         jListInputFilesSelected = new JList<>(jListInputFilesSelectedModel);
         jScrollPane1FileListItems = new JScrollPane(jListInputFilesSelected);
 
         // INPUT NO OF HEADERS
-        jSpinnerInputHeaderCount = new JSpinner(jSpinnerInputHeaderCountModel);
-
-        // OUTPUT LOGS
-        LOG_TEXT_AREA.setEditable(false);
-        LOG_TEXT_AREA.setWrapStyleWord(true);
-        jScrollPane1OutputFileLogs = new JScrollPane(LOG_TEXT_AREA);
-
-        updateLogs();
-        jScrollPane1OutputFileLogs.setHorizontalScrollBar(null);
-
-        DefaultCaret caret = (DefaultCaret) LOG_TEXT_AREA.getCaret();
-        caret.setUpdatePolicy(DefaultCaret.ALWAYS_UPDATE);
-
+        jSpinnerInputHeaderCount = new JSpinner(JSPINNER_INPUT_HEADER_COUNT_MODEL);
+        
         // ACTIONABLE BUTTONS
         jButtonSelectInputFiles = new JButton("Choose File(s)");
         jButtonRemoveSelectedFiles = new JButton("Remove File");
@@ -116,7 +102,7 @@ public class OutlookEmailToCSVPanel extends JPanel {
 
         add(jButtonRun);
         add(jLabelOutputFileLogsTitle);
-        add(jScrollPane1OutputFileLogs);
+        add(JSCROLL_PANEL_OUTPUT_LOGS);
         add(jButtonResetAll);
 
         // set component bounds (only needed by Absolute Positioning)
@@ -132,7 +118,7 @@ public class OutlookEmailToCSVPanel extends JPanel {
 
         jButtonRun.setBounds(20, 215, 130, 30);
         jLabelOutputFileLogsTitle.setBounds(20, 255, 775, 30);
-        jScrollPane1OutputFileLogs.setBounds(20, 285, 775, 220);
+        JSCROLL_PANEL_OUTPUT_LOGS.setBounds(20, 285, 775, 220);
 
         jButtonResetAll.setBounds(665, 515, 130, 30);
 
@@ -200,7 +186,7 @@ public class OutlookEmailToCSVPanel extends JPanel {
         jListInputFilesSelectedModel.clear();
         INPUT_FILES.clear();
         LOG_TEXT_AREA.setText("");
-        LOGGER.info(() -> "Welcome to Outlook Email Data Extractor.");
+        UTILITY_MGR.getLogger().info(() -> "Welcome to Outlook Email Data Extractor.");
     }
 
     private void runAppAction(ActionEvent e) {
@@ -209,13 +195,13 @@ public class OutlookEmailToCSVPanel extends JPanel {
         jButtonResetAll.setEnabled(false);
         jButtonRemoveSelectedFiles.setEnabled(false);
 
-        outputConsoleLogsBreakline(LOGGER, "");
-        outputConsoleLogsBreakline(LOGGER, "Initialising Outlook Email Data Extractor");
-        outputConsoleLogsBreakline(LOGGER, "");
-        updateLogs();
+        UTILITY_MGR.outputConsoleLogsBreakline("");
+        UTILITY_MGR.outputConsoleLogsBreakline("Initialising Outlook Email Data Extractor");
+        UTILITY_MGR.outputConsoleLogsBreakline("");
+        UTILITY_MGR.updateLogs();
         try {
-            outputConsoleLogsBreakline(LOGGER, "Reading in Outlook files");
-            updateLogs();
+            UTILITY_MGR.outputConsoleLogsBreakline("Reading in Outlook files");
+            UTILITY_MGR.updateLogs();
             // ================================================= READ IN FILES ================================
             inputOutlook(INPUT_FILES);
             JFileChooser saveFileChooser = new JFileChooser();
@@ -238,7 +224,7 @@ public class OutlookEmailToCSVPanel extends JPanel {
                 }
             }
         } catch (IOException ex) {
-            LOGGER.log(Level.SEVERE, null, ex);
+            UTILITY_MGR.getLogger().log(Level.SEVERE, null, ex);
         }
 
         jButtonRun.setEnabled(false);
@@ -247,7 +233,7 @@ public class OutlookEmailToCSVPanel extends JPanel {
         jButtonSelectInputFiles.setEnabled(true);
     }
 
-    private static void inputOutlook(ArrayList<File> outlookFiles) throws IOException, FileNotFoundException {
+    private void inputOutlook(ArrayList<File> outlookFiles) throws IOException, FileNotFoundException {
         String outlookFileName = "";
         String outlookFilePath = "";
 
@@ -263,8 +249,8 @@ public class OutlookEmailToCSVPanel extends JPanel {
                 outlookFileName = outlookFile.getName();
                 outlookFilePath = outlookFile.getAbsolutePath();
                 
-                outputConsoleLogsBreakline(LOGGER, "Processing "+outlookFileName);
-                updateLogs();
+                UTILITY_MGR.outputConsoleLogsBreakline("Processing "+outlookFileName);
+                UTILITY_MGR.updateLogs();
                 
                 MsgParser msgp = new MsgParser();
                 String bodyText = "";
@@ -307,8 +293,8 @@ public class OutlookEmailToCSVPanel extends JPanel {
                 }
                 writer.close();
                 // CSV file has been written to
-                outputConsoleLogsBreakline(LOGGER, outputFile.getName() + " data has been extracted.");
-                updateLogs();
+                UTILITY_MGR.outputConsoleLogsBreakline(outputFile.getName() + " data has been extracted.");
+                UTILITY_MGR.updateLogs();
 
                 File fileToZip = new File(outputFile.getAbsolutePath());
                 FileInputStream fis = new FileInputStream(fileToZip);
@@ -325,12 +311,5 @@ public class OutlookEmailToCSVPanel extends JPanel {
             } // for-loop each ExcelFile
             zipOut.close();
         }
-    }
-
-    private static void updateLogs() {
-        jScrollPane1OutputFileLogs.getVerticalScrollBar().setValue(jScrollPane1OutputFileLogs.getVerticalScrollBar().getMaximum());
-        jScrollPane1OutputFileLogs.getVerticalScrollBar().paint(jScrollPane1OutputFileLogs.getVerticalScrollBar().getGraphics());
-        LOG_TEXT_AREA.scrollRectToVisible(LOG_TEXT_AREA.getVisibleRect());
-        LOG_TEXT_AREA.paint(LOG_TEXT_AREA.getGraphics());
     }
 }

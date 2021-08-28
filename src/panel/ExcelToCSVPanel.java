@@ -1,5 +1,6 @@
 package panel;
 
+import util.UtilityManager;
 import au.com.bytecode.opencsv.CSVWriter;
 import java.awt.*;
 import java.io.File;
@@ -8,16 +9,13 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
-import javax.swing.text.DefaultCaret;
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import java.awt.event.ActionEvent;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
-import java.lang.invoke.MethodHandles;
 import java.util.logging.Level;
-import java.util.logging.Logger;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
@@ -26,24 +24,21 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
-import static panel.Util.copy;
-import static panel.Util.getCurrentTimeStamp;
-import static panel.Util.outputConsoleLogsBreakline;
+import static util.UtilityManager.copy;
+import static util.UtilityManager.getCurrentTimeStamp;
 
 public class ExcelToCSVPanel extends JPanel {
-
+    private final UtilityManager UTILITY_MGR;
     private final JFrame APP_FRAME;
-    private static final String LOGGER_NAME = MethodHandles.lookup().lookupClass().getName();
-    private static final Logger LOGGER = Logger.getLogger(LOGGER_NAME);
 
     // input files selected
     DefaultListModel jListInputFilesSelectedModel = new DefaultListModel<>();
     private static JList<String> jListInputFilesSelected;
     private static JScrollPane jScrollPane1FileListItems;
 
-    // OUTPUT LOGS
-    private static final JTextArea LOG_TEXT_AREA = new JTextArea();
-    private static JScrollPane jScrollPane1OutputFileLogs;
+    // OUTPUT LOGS UTILITY_MGR
+    private final JTextArea LOG_TEXT_AREA;
+    private final JScrollPane JSCROLL_PANEL_OUTPUT_LOGS;
 
     private static JLabel jLabelFileChooserText;
 
@@ -65,26 +60,19 @@ public class ExcelToCSVPanel extends JPanel {
     public ExcelToCSVPanel(JFrame APP_FRAME) {
         super();
         this.APP_FRAME = APP_FRAME;
-        LOGGER.setUseParentHandlers(false);
-        LOGGER.setLevel(Level.ALL);
-        LOGGER.addHandler(new TextAreaHandler(new TextAreaOutputStream(LOG_TEXT_AREA)));
-
-        LOGGER.info(() -> "Welcome to Excel To CSV Data Extractor.");
+        
+        LOG_TEXT_AREA = new JTextArea();
+        LOG_TEXT_AREA.setEditable(false);
+        LOG_TEXT_AREA.setWrapStyleWord(true);
+        JSCROLL_PANEL_OUTPUT_LOGS = new JScrollPane(LOG_TEXT_AREA);
+        UTILITY_MGR=new UtilityManager(LOG_TEXT_AREA,JSCROLL_PANEL_OUTPUT_LOGS); // so all logs are handled by the same panel
+        
+        UTILITY_MGR.getLogger().info(() -> "Welcome to Excel To CSV Data Extractor.");
 
         // INPUT FILES SELECTED
         jListInputFilesSelected = new JList<>(jListInputFilesSelectedModel);
         jScrollPane1FileListItems = new JScrollPane(jListInputFilesSelected);
-
-        // OUTPUT LOGS
-        LOG_TEXT_AREA.setEditable(false);
-        LOG_TEXT_AREA.setWrapStyleWord(true);
-        jScrollPane1OutputFileLogs = new JScrollPane(LOG_TEXT_AREA);
-
-        updateLogs();
-        jScrollPane1OutputFileLogs.setHorizontalScrollBar(null);
-
-        DefaultCaret caret = (DefaultCaret) LOG_TEXT_AREA.getCaret();
-        caret.setUpdatePolicy(DefaultCaret.ALWAYS_UPDATE);
+        UTILITY_MGR.updateLogs();
 
         // ACTIONABLE BUTTONS
         jButtonSelectInputFiles = new JButton("Choose File(s)");
@@ -110,7 +98,7 @@ public class ExcelToCSVPanel extends JPanel {
 
         add(jButtonRun);
         add(jLabelOutputFileLogsTitle);
-        add(jScrollPane1OutputFileLogs);
+        add(JSCROLL_PANEL_OUTPUT_LOGS);
         add(jButtonResetAll);
 
         // set component bounds (only needed by Absolute Positioning)
@@ -123,7 +111,7 @@ public class ExcelToCSVPanel extends JPanel {
 
         jButtonRun.setBounds(20, 215, 130, 30);
         jLabelOutputFileLogsTitle.setBounds(20, 255, 775, 30);
-        jScrollPane1OutputFileLogs.setBounds(20, 285, 775, 220);
+        JSCROLL_PANEL_OUTPUT_LOGS.setBounds(20, 285, 775, 220);
 
         jButtonResetAll.setBounds(665, 515, 130, 30);
 
@@ -191,7 +179,7 @@ public class ExcelToCSVPanel extends JPanel {
         jListInputFilesSelectedModel.clear();
         INPUT_FILES.clear();
         LOG_TEXT_AREA.setText("");
-        LOGGER.info(() -> "Welcome to Excel To CSV Extractor App.");
+        UTILITY_MGR.getLogger().info(() -> "Welcome to Excel To CSV Extractor App.");
     }
 
     private void runAppAction(ActionEvent e) {
@@ -199,12 +187,12 @@ public class ExcelToCSVPanel extends JPanel {
         jButtonResetAll.setEnabled(false);
         jButtonRemoveSelectedFiles.setEnabled(false);
 
-        outputConsoleLogsBreakline(LOGGER, "");
-        outputConsoleLogsBreakline(LOGGER, "Initialising Excel To CSV Extractor App");
-        outputConsoleLogsBreakline(LOGGER, "");
+        UTILITY_MGR.outputConsoleLogsBreakline("");
+        UTILITY_MGR.outputConsoleLogsBreakline("Initialising Excel To CSV Extractor App");
+        UTILITY_MGR.outputConsoleLogsBreakline("");
 
         try {
-            outputConsoleLogsBreakline(LOGGER, "Reading in excel files");
+            UTILITY_MGR.outputConsoleLogsBreakline("Reading in excel files");
             // ================================================= READ IN FILES ================================
             inputExcel(INPUT_FILES);
             JFileChooser saveFileChooser = new JFileChooser();
@@ -226,10 +214,8 @@ public class ExcelToCSVPanel extends JPanel {
                     outputArchiveZip.delete();
                 }
             }
-        } catch (EncryptedDocumentException ex) {
-            LOGGER.log(Level.SEVERE, null, ex);
-        } catch (IOException ex) {
-            LOGGER.log(Level.SEVERE, null, ex);
+        } catch (EncryptedDocumentException | IOException ex) {
+            UTILITY_MGR.getLogger().log(Level.SEVERE, null, ex);
         }
 
         jButtonRun.setEnabled(false);
@@ -238,7 +224,7 @@ public class ExcelToCSVPanel extends JPanel {
         jButtonSelectInputFiles.setEnabled(true);
     }
 
-    private static void inputExcel(ArrayList<File> excelFiles) throws EncryptedDocumentException, IOException, FileNotFoundException {
+    private void inputExcel(ArrayList<File> excelFiles) throws EncryptedDocumentException, IOException, FileNotFoundException {
         DataFormatter dataformatter = new DataFormatter();
         String excelFileName = "";
         String excelFilePath = "";
@@ -274,8 +260,6 @@ public class ExcelToCSVPanel extends JPanel {
                     os.write(0xbb);
                     os.write(0xbf);
                     
-                    /*char textDelimiter = (char) jComboBoxDelimiterChoice.getSelectedItem();
-                    char textQualifier = (char) jComboBoxTextQualifierChoice.getSelectedItem();*/
                     writer = new CSVWriter(new OutputStreamWriter(os), ',', '"');
                     for (int r = sheet.getFirstRowNum(); r <= sheet.getLastRowNum(); r++) {
                         Row row = sheet.getRow(r);
@@ -317,14 +301,14 @@ public class ExcelToCSVPanel extends JPanel {
                                 }
                                 writer.writeNext(valuesArr);
                             } catch (Exception ex) {
-                                LOGGER.log(Level.SEVERE, null, ex);
+                                UTILITY_MGR.getLogger().log(Level.SEVERE, null, ex);
                             }
                         } // check if row is null
                     } // for-each row
                     writer.close();
                     // CSV file has been written to
-                    outputConsoleLogsBreakline(LOGGER, outputFile.getName() + " data has been extracted from input excel file.");
-                    updateLogs();
+                    UTILITY_MGR.outputConsoleLogsBreakline(outputFile.getName() + " data has been extracted from input excel file.");
+                    UTILITY_MGR.updateLogs();
 
                     File fileToZip = new File(outputFile.getAbsolutePath());
                     FileInputStream fis = new FileInputStream(fileToZip);
@@ -342,12 +326,5 @@ public class ExcelToCSVPanel extends JPanel {
             } // for-loop each ExcelFile
             zipOut.close();
         }
-    }
-
-    private static void updateLogs() {
-        jScrollPane1OutputFileLogs.getVerticalScrollBar().setValue(jScrollPane1OutputFileLogs.getVerticalScrollBar().getMaximum());
-        jScrollPane1OutputFileLogs.getVerticalScrollBar().paint(jScrollPane1OutputFileLogs.getVerticalScrollBar().getGraphics());
-        LOG_TEXT_AREA.scrollRectToVisible(LOG_TEXT_AREA.getVisibleRect());
-        LOG_TEXT_AREA.paint(LOG_TEXT_AREA.getGraphics());
     }
 }

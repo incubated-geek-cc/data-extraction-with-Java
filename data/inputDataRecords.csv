@@ -1,0 +1,940 @@
+﻿100275,25 Jan 2021,Urban,WI,Midwest,"53,410,614",Frame,Construction,Y,Y
+100277,25 Jan 2021,Urban,NJ,East,"3,189,300",Masonry,Service,Y,Y
+100312,25 Jan 2021,Rural,IL,Midwest,"3,145,700",Frame,Education,N,N
+100327,25 Jan 2021,Urban,WI,Midwest,"1,451,100",Frame,Recreation,N,N
+100326,26 Jan 2021,Urban,OH,Central,"1,787,900",Frame,Office Bldg,N,N
+100379,26 Jan 2021,Urban,NY,East,"18,777,355",Frame,Apartment,Y,Y
+100310,28 Jan 2021,Urban,WI,Midwest,"8,800,000",Fire Resist,Office Bldg,Y,Y
+100341,28 Jan 2021,Urban,NY,East,"1,123,000",Frame,Office Bldg,Y,Y
+100289,29 Jan 2021,Rural,NY,East,"2,145,420",Frame,Farming,N,N
+100290,29 Jan 2021,Urban,NY,East,"18,933,000",Frame,Office Bldg,Y,Y
+100291,29 Jan 2021,Urban,NY,East,"21,400,000",Fire Resist,Apartment,Y,Y
+100340,30 Jan 2021,Urban,NY,East,"3,754,000",Frame,Office Bldg,Y,Y
+100415,31 Jan 2021,Urban,NY,East,"9,650,000",Frame,Office Bldg,Y,Y
+100421,31 Jan 2021,Urban,NY,East,"9,503,000",Frame,Office Bldg,Y,Y
+100304,1 Feb 2021,Urban,NJ,East,"1,688,300",Frame,Hospitality,N,Y
+100414,2 Feb 2021,Urban,WI,Midwest,"17,856,705",Masonry,Apartment,Y,Y
+100420,2 Feb 2021,Urban,NY,East,"7,577,000",Frame,Apartment,Y,Y
+100481,2 Feb 2021,Urban,WI,Midwest,"1,990,915",Masonry,Office Bldg,N,N
+100352,3 Feb 2021,Urban,NJ,East,"1,245,000",Frame,Hospitality,Y,Y
+100496,4 Feb 2021,Urban,IL,Midwest,"1,895,000",Masonry,Office Bldg,N,N
+100309,5 Feb 2021,Urban,WI,Midwest,"5,000,368",Masonry,Manufacturing,N,N
+100413,5 Feb 2021,Urban,NY,East,"8,397,700",Frame,Apartment,Y,Y
+100498,6 Feb 2021,Urban,NJ,East,"36,356,000",Fire Resist,Apartment,Y,Y
+100499,7 Feb 2021,Urban,NJ,East,"16,932,600",Fire Resist,Apartment,Y,Y
+100509,7 Feb 2021,Urban,OH,Central,"1,849,000",Metal Clad,Retail,N,N
+100371,8 Feb 2021,Urban,OH,Central,"218,490",Frame,Apartment,N,N
+100412,8 Feb 2021,Urban,NJ,East,"3,052,600",Frame,Apartment,Y,N
+100370,9 Feb 2021,Urban,WI,Midwest,"8,126,500",Masonry,Organization,Y,Y
+100377,9 Feb 2021,Urban,NY,East,"11,400,000",Masonry,Apartment,Y,Y
+100452,9 Feb 2021,Urban,NJ,East,"5,918,400",Frame,Farming,Y,N
+100459,9 Feb 2021,Rural,NY,East,"2,550,750",Frame,Farming,N,N
+100325,13 Feb 2021,Urban,NY,East,"140,000",Masonry,Retail,N,N
+100419,13 Feb 2021,Urban,NY,East,"725,000",Masonry,Service,N,N
+100512,13 Feb 2021,Urban,NY,East,"10,098,900",Frame,Office Bldg,Y,Y
+100513,13 Feb 2021,Rural,NY,East,"2,937,200",Frame,Farming,N,N
+100514,13 Feb 2021,Urban,NJ,East,"3,644,800",Frame,Apartment,Y,Y
+100471,15 Feb 2021,Urban,NY,East,"13,882,500",Frame,Apartment,Y,Y
+100396,16 Feb 2021,Rural,NY,East,"2,050,000",Frame,Farming,N,N
+100436,17 Feb 2021,Rural,NY,East,"3,805,200",Metal Clad,Farming,N,N
+100492,18 Feb 2021,Rural,NY,East,"1,417,800",Frame,Organization,N,N
+100494,18 Feb 2021,Rural,WI,Midwest,"5,613,900",Masonry,Farming,N,N
+100493,19 Feb 2021,Urban,NJ,East,"2,471,100",Frame,Farming,N,N
+100351,20 Feb 2021,Rural,VT,Northeast,"2,985,950",Frame,Farming,N,N
+100411,20 Feb 2021,Urban,WI,Midwest,"9,062,700",Fire Resist,Hospitality,N,N
+100469,21 Feb 2021,Urban,NY,East,"7,350,000",Frame,Apartment,Y,Y
+100418,22 Feb 2021,Urban,NJ,East,"1,300,900",Masonry,Office Bldg,N,N
+100511,22 Feb 2021,Urban,NY,East,"12,750,000",Frame,Apartment,Y,Y
+100536,22 Feb 2021,Urban,NY,East,"7,585,000",Fire Resist,Office Bldg,Y,Y
+100537,22 Feb 2021,Urban,NY,East,"9,493,313",Masonry,Apartment,Y,Y
+100394,23 Feb 2021,Urban,NY,East,"10,302,000",Fire Resist,Office Bldg,Y,Y
+100367,24 Feb 2021,Urban,NH,Northeast,"2,500,000",Metal Clad,Manufacturing,N,N
+100408,24 Feb 2021,Urban,WI,Midwest,"4,833,900",Masonry,Office Bldg,N,N
+100410,24 Feb 2021,Urban,NY,East,"2,029,500",Metal Clad,Apartment,Y,Y
+100369,25 Feb 2021,Rural,NY,East,"2,233,200",Frame,Farming,N,N
+100409,25 Feb 2021,Urban,NY,East,"2,001,250",Frame,Office Bldg,Y,Y
+100546,27 Feb 2021,Rural,NY,East,"1,498,850",Metal Clad,Farming,N,N
+100434,1 Mar 2021,Urban,NJ,East,"405,556",Frame,Apartment,Y,N
+100523,1 Mar 2021,Urban,NY,East,"1,311,220",Frame,Apartment,N,N
+100433,2 Mar 2021,Urban,NY,East,"1,769,785",Frame,Hospitality,Y,Y
+100566,2 Mar 2021,Urban,OH,Central,"5,377,000",Frame,Apartment,Y,Y
+100522,5 Mar 2021,Rural,NY,East,"1,599,860",Frame,Farming,N,N
+100457,6 Mar 2021,Urban,NY,East,"10,780,450",Frame,Apartment,Y,Y
+100521,6 Mar 2021,Urban,NJ,East,"3,839,200",Masonry,Apartment,N,N
+100532,7 Mar 2021,Urban,NJ,East,"296,000",Frame,Apartment,N,N
+100533,7 Mar 2021,Rural,WI,Midwest,"2,707,630",Frame,Farming,N,N
+100467,8 Mar 2021,Urban,NJ,East,"2,249,500",Frame,Farming,N,N
+100583,8 Mar 2021,Urban,NY,East,"7,611,000",Masonry,Office Bldg,Y,Y
+100404,9 Mar 2021,Rural,WI,Midwest,"1,152,600",Frame,Farming,N,N
+100554,9 Mar 2021,Urban,NJ,East,"9,115,500",Frame,Apartment,Y,Y
+100446,11 Mar 2021,Urban,NY,East,"1,600,000",Masonry,Hospitality,Y,Y
+100465,12 Mar 2021,Urban,NJ,East,"2,575,965",Frame,Farming,Y,N
+100490,12 Mar 2021,Urban,NY,East,"220,000",Metal Clad,Hospitality,N,N
+100456,14 Mar 2021,Urban,NY,East,"1,800,000",Frame,Apartment,Y,Y
+100489,14 Mar 2021,Urban,NJ,East,"16,998,000",Frame,Office Bldg,Y,Y
+100545,14 Mar 2021,Urban,NY,East,"14,450,000",Frame,Office Bldg,Y,Y
+100543,15 Mar 2021,Urban,NY,East,"2,835,800",Metal Clad,Manufacturing,N,N
+100564,15 Mar 2021,Urban,WI,Midwest,"2,280,000",Frame,Hospitality,Y,Y
+100430,17 Mar 2021,Urban,NJ,East,"3,960,000",Frame,Office Bldg,Y,Y
+100477,17 Mar 2021,Urban,VT,Northeast,"5,272,975",Frame,Apartment,Y,Y
+100478,17 Mar 2021,Urban,VT,Northeast,"6,354,220",Frame,Apartment,Y,Y
+100444,21 Mar 2021,Urban,NY,East,"8,892,200",Masonry,Apartment,Y,Y
+100582,22 Mar 2021,Urban,NJ,East,"4,651,680",Frame,Apartment,Y,Y
+100487,23 Mar 2021,Urban,NY,East,"5,990,067",Frame,Apartment,N,N
+100519,25 Mar 2021,Rural,NY,East,"4,102,500",Frame,Farming,N,N
+100462,26 Mar 2021,Urban,NY,East,"3,400,000",Frame,Construction,Y,Y
+100486,26 Mar 2021,Urban,NY,East,"9,973,900",Frame,Apartment,Y,Y
+100463,27 Mar 2021,Urban,NY,East,"15,480,000",Frame,Office Bldg,Y,Y
+100595,27 Mar 2021,Rural,NY,East,"2,446,600",Frame,Farming,N,N
+100617,27 Mar 2021,Urban,VT,Northeast,"8,861,500",Frame,Office Bldg,N,N
+100580,30 Mar 2021,Urban,NH,Northeast,"97,920",Frame,Office Bldg,Y,Y
+100581,30 Mar 2021,Urban,NY,East,"5,150,000",Frame,Apartment,Y,Y
+100475,31 Mar 2021,Rural,WI,Midwest,"1,451,662",Masonry,Farming,N,N
+100503,31 Mar 2021,Urban,NJ,East,"1,761,960",Masonry,Office Bldg,N,N
+100504,31 Mar 2021,Rural,NY,East,"1,649,105",Frame,Farming,N,N
+100616,31 Mar 2021,Urban,NY,East,"2,329,500",Frame,Apartment,N,N
+100614,3 Apr 2021,Urban,NY,East,"721,500",Frame,Apartment,Y,Y
+100529,5 Apr 2021,Urban,NJ,East,"2,455,000",Frame,Apartment,Y,Y
+100551,6 Apr 2021,Urban,NJ,East,"3,363,463",Frame,Farming,Y,N
+100501,7 Apr 2021,Rural,WI,Midwest,"1,568,100",Frame,Farming,N,N
+100516,7 Apr 2021,Urban,WI,Midwest,"2,063,960",Masonry,Organization,N,N
+100542,7 Apr 2021,Urban,VT,Northeast,"1,806,500",Frame,Apartment,N,Y
+100625,7 Apr 2021,Urban,NY,East,"49,837,500",Fire Resist,Apartment,Y,Y
+100540,9 Apr 2021,Rural,NY,East,"2,244,800",Frame,Farming,N,N
+100663,10 Apr 2021,Urban,NJ,East,"10,346,950",Frame,Office Bldg,N,Y
+100539,11 Apr 2021,Urban,NJ,East,"8,150,000",Frame,Apartment,N,Y
+100642,11 Apr 2021,Urban,NY,East,"1,697,200",Frame,Other,N,N
+100549,15 Apr 2021,Urban,VT,Northeast,"3,334,353",Metal Clad,Farming,Y,Y
+100680,15 Apr 2021,Rural,WI,Midwest,"6,020,060",Masonry,Farming,N,N
+100560,16 Apr 2021,Urban,NY,East,"1,381,370",Frame,Organization,N,N
+100629,16 Apr 2021,Urban,NY,East,"2,442,400",Frame,Retail,N,N
+100631,16 Apr 2021,Urban,NJ,East,"4,193,603",Frame,Farming,Y,N
+100572,17 Apr 2021,Rural,WI,Midwest,"3,725,520",Masonry,Farming,N,N
+100630,17 Apr 2021,Urban,NY,East,"7,394,300",Frame,Apartment,Y,Y
+100637,17 Apr 2021,Urban,NY,East,"2,402,500",Frame,Apartment,Y,Y
+100659,17 Apr 2021,Urban,NJ,East,"1,693,000",Frame,Farming,Y,N
+100527,18 Apr 2021,Urban,NJ,East,"9,148,076",Frame,Manufacturing,Y,Y
+100638,18 Apr 2021,Urban,NJ,East,"3,950,000",Frame,Apartment,Y,Y
+100679,18 Apr 2021,Urban,NJ,East,"14,183,900",Frame,Apartment,Y,Y
+100678,21 Apr 2021,Urban,WI,Midwest,"35,245,000",Masonry,Apartment,Y,Y
+100570,22 Apr 2021,Urban,WI,Midwest,"294,700",Masonry,Office Bldg,N,N
+100578,25 Apr 2021,Urban,OH,Central,"4,488,000",Frame,Apartment,N,N
+100611,25 Apr 2021,Urban,NJ,East,"1,595,500",Frame,Office Bldg,Y,Y
+100621,25 Apr 2021,Urban,MI,Central,"394,220",Frame,Retail,N,N
+100622,25 Apr 2021,Urban,WI,Midwest,"723,900",Fire Resist,Office Bldg,Y,Y
+100623,25 Apr 2021,Rural,NY,East,"2,006,700",Frame,Farming,N,N
+100604,26 Apr 2021,Urban,WI,Midwest,"979,572",Frame,Retail,N,N
+100610,27 Apr 2021,Urban,NY,East,"5,086,300",Frame,Office Bldg,Y,Y
+100591,29 Apr 2021,Rural,NY,East,"4,353,100",Frame,Farming,N,N
+100557,30 Apr 2021,Urban,NY,East,"2,056,700",Frame,Other,Y,Y
+100636,30 Apr 2021,Urban,IL,Midwest,"4,886,675",Masonry,Apartment,N,N
+100628,1 May 2021,Rural,NY,East,"1,973,200",Frame,Farming,N,N
+100650,2 May 2021,Urban,NY,East,"4,156,000",Masonry,Hospitality,Y,Y
+100651,2 May 2021,Urban,NJ,East,"1,045,000",Frame,Apartment,Y,N
+100569,3 May 2021,Urban,NY,East,"800,000",Frame,Construction,N,N
+100609,3 May 2021,Urban,NJ,East,"4,483,000",Frame,Office Bldg,Y,Y
+100649,4 May 2021,Rural,NY,East,"3,074,775",Frame,Farming,N,N
+100656,6 May 2021,Urban,MN,Midwest,"1,834,200",Frame,Hospitality,Y,Y
+100677,6 May 2021,Urban,NY,East,"13,370,000",Frame,Apartment,Y,Y
+100704,6 May 2021,Urban,NJ,East,"14,474,600",Fire Resist,Apartment,Y,Y
+100713,6 May 2021,Rural,WI,Midwest,"2,103,390",Masonry,Farming,N,N
+100584,7 May 2021,Urban,WI,Midwest,"7,750,100",Masonry,Other,N,N
+100674,7 May 2021,Urban,NY,East,"9,250,000",Frame,Office Bldg,Y,Y
+100589,8 May 2021,Rural,WI,Midwest,"2,867,650",Frame,Farming,N,N
+100590,8 May 2021,Rural,WI,Midwest,"2,798,650",Masonry,Farming,N,N
+100675,8 May 2021,Urban,NY,East,"2,468,300",Frame,Apartment,Y,Y
+100648,9 May 2021,Urban,NY,East,"270,000",Masonry,Retail,N,N
+100683,9 May 2021,Urban,NJ,East,"1,374,100",Masonry,Office Bldg,Y,Y
+100647,10 May 2021,Urban,WI,Midwest,"4,077,100",Masonry,Apartment,Y,Y
+100602,11 May 2021,Rural,NY,East,"1,651,300",Frame,Farming,N,N
+100672,11 May 2021,Urban,VT,Northeast,"2,785,000",Frame,Organization,N,N
+100600,12 May 2021,Urban,WI,Midwest,"3,086,048",Frame,Hospitality,Y,Y
+100655,12 May 2021,Urban,NY,East,"1,974,300",Masonry,Organization,Y,Y
+100671,12 May 2021,Rural,NY,East,"3,660,780",Frame,Farming,N,N
+100646,13 May 2021,Urban,NY,East,"2,550,000",Frame,Apartment,Y,Y
+100618,14 May 2021,Urban,NY,East,"2,730,000",Metal Clad,Hospitality,Y,Y
+100681,14 May 2021,Urban,NY,East,"963,100",Metal Clad,Apartment,Y,Y
+100619,15 May 2021,Rural,NY,East,"1,419,500",Frame,Farming,N,N
+100627,16 May 2021,Urban,NY,East,"2,758,482",Fire Resist,Apartment,Y,Y
+100670,16 May 2021,Urban,OH,Central,"661,900",Frame,Apartment,N,N
+100689,16 May 2021,Urban,NY,East,"19,451,600",Frame,Office Bldg,Y,Y
+100726,16 May 2021,Urban,NY,East,"1,292,345",Frame,Office Bldg,N,N
+100702,17 May 2021,Urban,VT,Northeast,"9,702,682",Frame,Apartment,N,N
+100703,17 May 2021,Urban,NJ,East,"10,198,700",Fire Resist,Office Bldg,Y,Y
+100635,18 May 2021,Urban,MI,Central,"714,000",Frame,Apartment,N,N
+100736,18 May 2021,Rural,VT,Northeast,"2,099,525",Frame,Farming,N,N
+100737,18 May 2021,Urban,NJ,East,"16,200,000",Frame,Office Bldg,Y,Y
+100644,19 May 2021,Urban,NY,East,"2,570,600",Masonry,Office Bldg,Y,Y
+100643,20 May 2021,Urban,NY,East,"1,280,000",Fire Resist,Hospitality,Y,Y
+100698,20 May 2021,Urban,NY,East,"205,000",Fire Resist,Retail,N,N
+100652,21 May 2021,Urban,OH,Central,"1,760,800",Frame,Apartment,N,N
+100653,21 May 2021,Urban,NJ,East,"2,812,559",Frame,Farming,N,N
+100705,21 May 2021,Rural,NY,East,"3,943,000",Frame,Farming,N,N
+100718,21 May 2021,Urban,NY,East,"3,107,790",Masonry,Office Bldg,N,Y
+100744,21 May 2021,Urban,NY,East,"9,448,200",Frame,Apartment,Y,Y
+100709,22 May 2021,Rural,MI,Central,"10,617,800",Frame,Manufacturing,Y,Y
+100749,22 May 2021,Urban,NY,East,"847,300",Frame,Apartment,Y,Y
+100751,22 May 2021,Urban,NJ,East,"400,000",Masonry,Office Bldg,N,Y
+100752,22 May 2021,Urban,NY,East,"363,200",Frame,Office Bldg,N,Y
+100696,23 May 2021,Urban,IL,Midwest,"2,922,600",Masonry,Apartment,Y,Y
+100742,23 May 2021,Urban,WI,Midwest,"500,500",Masonry,Apartment,Y,Y
+100666,24 May 2021,Rural,NY,East,"1,927,450",Frame,Farming,N,N
+100667,25 May 2021,Rural,NY,East,"2,660,299",Frame,Farming,N,N
+100740,25 May 2021,Urban,WI,Midwest,"3,980,100",Masonry,Apartment,N,N
+100757,25 May 2021,Urban,WI,Midwest,"2,987,000",Masonry,Apartment,Y,Y
+100750,27 May 2021,Urban,VT,Northeast,"16,429,900",Frame,Apartment,Y,Y
+100756,27 May 2021,Urban,NY,East,"16,950,000",Frame,Apartment,Y,Y
+100754,29 May 2021,Urban,NY,East,"36,909,180",Metal Clad,Manufacturing,Y,Y
+100764,29 May 2021,Urban,NY,East,"9,600,000",Frame,Office Bldg,Y,N
+100724,30 May 2021,Urban,NY,East,"22,050,000",Frame,Office Bldg,Y,Y
+100686,1 Jun 2021,Urban,NY,East,"3,850,000",Frame,Construction,N,Y
+100761,2 Jun 2021,Urban,VT,Northeast,"13,514,081",Frame,Recreation,Y,Y
+100695,3 Jun 2021,Urban,NY,East,"2,000,000",Frame,Hospitality,Y,Y
+100727,3 Jun 2021,Rural,WI,Midwest,"1,658,765",Masonry,Farming,N,N
+100777,3 Jun 2021,Urban,OH,Central,"8,272,853",Masonry,Apartment,N,N
+100774,4 Jun 2021,Urban,NY,East,"6,750,000",Frame,Apartment,Y,Y
+100720,5 Jun 2021,Urban,IL,Midwest,"7,828,000",Masonry,Office Bldg,N,Y
+100723,5 Jun 2021,Urban,NJ,East,"373,500",Frame,Office Bldg,N,N
+100759,5 Jun 2021,Urban,NY,East,"17,050,000",Frame,Office Bldg,Y,Y
+100722,6 Jun 2021,Rural,NY,East,"1,958,400",Frame,Farming,N,N
+100731,6 Jun 2021,Urban,NY,East,"17,746,832",Masonry,Apartment,Y,Y
+100755,6 Jun 2021,Urban,WI,Midwest,"6,040,300",Masonry,Apartment,Y,N
+100745,7 Jun 2021,Rural,WI,Midwest,"2,224,219",Frame,Farming,N,N
+100746,7 Jun 2021,Urban,NY,East,"847,300",Frame,Office Bldg,Y,Y
+100747,7 Jun 2021,Urban,WI,Midwest,"782,428",Masonry,Apartment,N,N
+100780,8 Jun 2021,Urban,NJ,East,"299,400",Frame,Office Bldg,Y,N
+100760,9 Jun 2021,Urban,WI,Midwest,"1,397,100",Masonry,Office Bldg,Y,Y
+100781,9 Jun 2021,Urban,NY,East,"1,714,835",Frame,Apartment,N,N
+100783,9 Jun 2021,Urban,MI,Central,"1,991,600",Frame,Organization,N,N
+100768,10 Jun 2021,Urban,WI,Midwest,"3,701,573",Frame,Farming,N,N
+100769,10 Jun 2021,Urban,NJ,East,"5,460,000",Frame,Apartment,Y,Y
+100775,10 Jun 2021,Rural,NY,East,"3,136,600",Frame,Farming,N,N
+100773,11 Jun 2021,Urban,NY,East,"1,780,000",Frame,Hospitality,Y,Y
+100789,26 Aug 2021,Urban,NY,East,"230,000",Frame,Manufacturing,Y,Y
+100790,26 Aug 2021,Urban,NJ,East,"1,463,800",Frame,Farming,Y,N
+100792,26 Aug 2021,Rural,VT,Northeast,"3,579,800",Metal Clad,Farming,N,N
+100793,27 Aug 2021,Urban,NY,East,"1,275,600",Frame,Apartment,N,Y
+100797,29 Aug 2021,Rural,NY,East,"5,781,710",Frame,Farming,N,N
+100799,30 Aug 2021,Urban,NH,Northeast,"320,000",Masonry,Retail,N,N
+100800,30 Aug 2021,Urban,NY,East,"1,379,400",Frame,Apartment,N,N
+100801,31 Aug 2021,Rural,WI,Midwest,"6,385,452",Frame,Farming,Y,N
+100803,31 Aug 2021,Urban,WI,Midwest,"4,671,000",Masonry,Apartment,Y,Y
+100805,1 Sep 2021,Rural,NY,East,"199,000",Frame,Retail,N,N
+100808,2 Sep 2021,Urban,WI,Midwest,"2,100,000",Frame,Apartment,N,N
+100810,2 Sep 2021,Urban,NY,East,"1,875,000",Masonry,Hospitality,Y,Y
+100811,2 Sep 2021,Rural,WI,Midwest,"2,201,500",Frame,Farming,N,N
+100813,2 Sep 2021,Urban,NY,East,"1,986,100",Frame,Apartment,N,N
+100814,2 Sep 2021,Urban,WI,Midwest,"105,000",Masonry,Other,N,N
+100817,3 Sep 2021,Urban,NJ,East,"3,700,000",Masonry,Office Bldg,Y,Y
+100818,3 Sep 2021,Urban,IL,Midwest,"29,128,000",Fire Resist,Apartment,Y,Y
+100819,5 Sep 2021,Urban,VT,Northeast,"10,700,000",Frame,Hospitality,Y,Y
+100821,5 Sep 2021,Rural,WI,Midwest,"1,778,600",Frame,Farming,N,N
+100822,6 Sep 2021,Rural,NY,East,"3,866,420",Frame,Farming,N,N
+100823,6 Sep 2021,Urban,NY,East,"1,037,500",Frame,Manufacturing,N,N
+100824,7 Sep 2021,Rural,NY,East,"2,480,800",Frame,Farming,N,N
+100825,7 Sep 2021,Urban,WI,Midwest,"578,400",Masonry,Office Bldg,N,N
+100826,7 Sep 2021,Urban,NY,East,"3,178,400",Frame,Office Bldg,Y,Y
+100828,9 Sep 2021,Urban,ME,Northeast,"7,150,000",Masonry,Apartment,Y,Y
+100831,10 Sep 2021,Urban,NJ,East,"1,604,800",Frame,Hospitality,Y,Y
+100832,10 Sep 2021,Urban,NY,East,"18,275,350",Frame,Office Bldg,Y,Y
+100834,11 Sep 2021,Urban,NY,East,"710,400",Masonry,Office Bldg,N,N
+100836,11 Sep 2021,Urban,WI,Midwest,"2,205,950",Masonry,Apartment,N,N
+100837,11 Sep 2021,Urban,WI,Midwest,"8,166,050",Fire Resist,Apartment,N,Y
+100838,11 Sep 2021,Urban,WI,Midwest,"3,222,081",Masonry,Farming,N,N
+100839,13 Sep 2021,Urban,NJ,East,"371,600",Frame,Hospitality,Y,N
+100844,15 Sep 2021,Urban,WI,Midwest,"1,365,000",Masonry,Hospitality,Y,Y
+100845,15 Sep 2021,Urban,NY,East,"24,000,000",Frame,Apartment,Y,Y
+100846,15 Sep 2021,Urban,NY,East,"7,700,000",Fire Resist,Construction,Y,Y
+100850,16 Sep 2021,Urban,IL,Midwest,"4,578,800",Frame,Farming,N,N
+100854,21 Sep 2021,Rural,VT,Northeast,"2,477,200",Frame,Farming,N,N
+100856,22 Sep 2021,Urban,NJ,East,"3,432,600",Frame,Office Bldg,Y,Y
+100857,23 Sep 2021,Rural,IL,Midwest,"172,100",Frame,Farming,N,N
+100859,23 Sep 2021,Urban,NY,East,"11,147,050",Fire Resist,Apartment,Y,Y
+100861,23 Sep 2021,Urban,NY,East,"2,007,000",Frame,Office Bldg,Y,Y
+100863,24 Sep 2021,Urban,NY,East,"9,404,500",Frame,Apartment,Y,Y
+100864,24 Sep 2021,Urban,NY,East,"5,056,900",Fire Resist,Apartment,Y,Y
+100868,26 Sep 2021,Urban,WI,Midwest,"4,577,032",Frame,Farming,N,N
+100869,26 Sep 2021,Urban,NY,East,"953,100",Metal Clad,Office Bldg,N,N
+100870,27 Sep 2021,Rural,NY,East,"2,562,500",Fire Resist,Manufacturing,N,N
+100872,28 Sep 2021,Urban,NY,East,"6,908,000",Frame,Office Bldg,Y,Y
+100873,29 Sep 2021,Urban,VT,Northeast,"1,588,100",Masonry,Recreation,N,N
+100874,30 Sep 2021,Urban,NY,East,"311,200",Frame,Apartment,N,N
+100875,1 Oct 2021,Urban,NY,East,"14,850,000",Frame,Office Bldg,Y,Y
+100876,1 Oct 2021,Urban,NY,East,"1,557,500",Frame,Office Bldg,N,Y
+100878,1 Oct 2021,Urban,NY,East,"4,267,000",Frame,Office Bldg,Y,Y
+100882,3 Oct 2021,Urban,IL,Midwest,"1,702,350",Frame,Apartment,N,N
+100883,4 Oct 2021,Urban,NY,East,"280,600",Frame,Office Bldg,N,N
+100885,4 Oct 2021,Urban,WI,Midwest,"2,025,100",Masonry,Office Bldg,N,N
+100886,4 Oct 2021,Urban,NY,East,"6,748,000",Frame,Apartment,Y,Y
+100887,5 Oct 2021,Urban,WI,Midwest,"2,067,500",Fire Resist,Service,Y,Y
+100889,5 Oct 2021,Urban,NY,East,"3,235,700",Frame,Apartment,Y,Y
+100894,7 Oct 2021,Urban,NY,East,"2,356,100",Frame,Hospitality,Y,Y
+100895,7 Oct 2021,Urban,NY,East,"7,932,500",Frame,Apartment,Y,Y
+100898,10 Oct 2021,Urban,NY,East,"1,851,125",Frame,Office Bldg,N,N
+100900,11 Oct 2021,Urban,NY,East,"8,345,500",Frame,Apartment,Y,Y
+100901,11 Oct 2021,Urban,NY,East,"2,400,000",Frame,Construction,Y,Y
+100903,12 Oct 2021,Urban,WI,Midwest,"1,675,000",Frame,Hospitality,Y,Y
+100904,13 Oct 2021,Urban,NH,Northeast,"145,680",Frame,Office Bldg,N,N
+100908,14 Oct 2021,Urban,NY,East,"13,900,000",Frame,Office Bldg,Y,Y
+100909,14 Oct 2021,Urban,NY,East,"13,575,000",Frame,Office Bldg,Y,Y
+100910,14 Oct 2021,Urban,NY,East,"5,950,500",Metal Clad,Office Bldg,Y,Y
+100912,15 Oct 2021,Urban,OH,Central,"1,569,440",Masonry,Organization,N,N
+100215,17 Oct 2021,Urban,NY,East,"2,131,900",Masonry,Retail,N,N
+100914,17 Oct 2021,Urban,WI,Midwest,"631,410",Frame,Farming,N,N
+100916,18 Oct 2021,Urban,NY,East,"1,856,637",Masonry,Hospitality,Y,Y
+100919,20 Oct 2021,Urban,WI,Midwest,"2,321,900",Frame,Manufacturing,N,N
+100920,20 Oct 2021,Urban,NJ,East,"4,726,686",Frame,Farming,Y,N
+100228,21 Oct 2021,Urban,ME,Northeast,"1,444,255",Frame,Organization,N,N
+100923,21 Oct 2021,Urban,NY,East,"1,830,900",Frame,Office Bldg,N,N
+100927,22 Oct 2021,Urban,VT,Northeast,"1,325,200",Frame,Organization,N,N
+100928,22 Oct 2021,Urban,NY,East,"1,267,625",Frame,Office Bldg,N,N
+100929,22 Oct 2021,Rural,NY,East,"3,409,000",Metal Clad,Farming,N,N
+100214,23 Oct 2021,Urban,NY,East,"33,250,000",Frame,Apartment,Y,Y
+100932,23 Oct 2021,Urban,NJ,East,"320,100",Frame,Apartment,N,N
+100933,23 Oct 2021,Urban,WI,Midwest,"275,000",Masonry,Apartment,N,N
+100934,24 Oct 2021,Urban,WI,Midwest,"1,519,100",Masonry,Apartment,N,N
+100936,26 Oct 2021,Rural,IL,Midwest,"2,182,250",Frame,Farming,N,N
+100250,27 Oct 2021,Rural,WI,Midwest,"4,328,620",Frame,Farming,N,N
+100939,27 Oct 2021,Urban,NJ,East,"1,840,000",Masonry,Apartment,N,N
+100940,28 Oct 2021,Urban,NY,East,"21,250,000",Frame,Office Bldg,Y,Y
+100941,28 Oct 2021,Rural,NY,East,"2,534,633",Frame,Farming,N,N
+100942,28 Oct 2021,Urban,NY,East,"2,494,300",Frame,Apartment,Y,Y
+100943,28 Oct 2021,Urban,NY,East,"2,562,500",Frame,Apartment,Y,Y
+100227,29 Oct 2021,Urban,WI,Midwest,"685,000",Masonry,Hospitality,Y,Y
+100945,29 Oct 2021,Urban,NY,East,"503,000",Masonry,Hospitality,N,Y
+100947,29 Oct 2021,Urban,NY,East,"10,259,600",Frame,Apartment,Y,Y
+100226,30 Oct 2021,Urban,NY,East,"3,798,400",Metal Clad,Office Bldg,Y,Y
+100948,30 Oct 2021,Urban,NJ,East,"2,269,865",Masonry,Retail,Y,Y
+100950,31 Oct 2021,Urban,NY,East,"2,363,700",Frame,Farming,N,N
+100249,1 Nov 2021,Urban,WI,Midwest,"1,960,200",Masonry,Farming,N,N
+100952,1 Nov 2021,Urban,IL,Midwest,"16,833,800",Fire Resist,Apartment,Y,Y
+100953,1 Nov 2021,Rural,NY,East,"4,127,900",Metal Clad,Farming,N,N
+100955,3 Nov 2021,Urban,NJ,East,"2,753,500",Masonry,Office Bldg,Y,Y
+100287,4 Nov 2021,Urban,NY,East,"10,518,041",Frame,Office Bldg,Y,Y
+100956,4 Nov 2021,Urban,NJ,East,"1,554,500",Frame,Farming,N,N
+100959,5 Nov 2021,Urban,NJ,East,"1,115,870",Frame,Farming,Y,N
+100261,6 Nov 2021,Urban,NY,East,"15,625,000",Frame,Office Bldg,Y,Y
+100961,6 Nov 2021,Urban,IL,Midwest,"787,500",Frame,Apartment,N,N
+100962,7 Nov 2021,Urban,NY,East,"15,750,000",Masonry,Apartment,Y,Y
+100966,7 Nov 2021,Urban,OH,Central,"320,000",Masonry,Retail,N,N
+100969,9 Nov 2021,Rural,WI,Midwest,"2,611,400",Frame,Farming,N,N
+100972,9 Nov 2021,Rural,NY,East,"2,398,000",Metal Clad,Farming,N,N
+100974,10 Nov 2021,Urban,NJ,East,"2,329,942",Frame,Farming,Y,N
+100975,10 Nov 2021,Urban,MN,Midwest,"1,305,100",Frame,Apartment,Y,Y
+100977,10 Nov 2021,Rural,NY,East,"4,981,500",Frame,Farming,N,N
+100978,10 Nov 2021,Urban,NY,East,"535,000",Fire Resist,Retail,N,N
+100981,10 Nov 2021,Urban,NY,East,"10,397,500",Frame,Apartment,Y,Y
+100240,11 Nov 2021,Urban,NJ,East,"2,003,000",Masonry,Apartment,Y,Y
+100982,11 Nov 2021,Urban,NY,East,"10,808,800",Frame,Office Bldg,Y,Y
+100983,11 Nov 2021,Urban,NY,East,"1,962,400",Frame,Apartment,N,N
+100239,12 Nov 2021,Urban,NJ,East,"2,423,500",Frame,Apartment,Y,Y
+100985,12 Nov 2021,Rural,NY,East,"3,067,800",Frame,Farming,N,N
+100237,13 Nov 2021,Urban,OH,Central,"1,202,090",Frame,Organization,N,N
+100238,13 Nov 2021,Urban,NJ,East,"3,062,000",Frame,Apartment,Y,Y
+100986,13 Nov 2021,Urban,NY,East,"2,815,900",Metal Clad,Manufacturing,N,N
+100987,13 Nov 2021,Urban,ME,Northeast,"790,000",Masonry,Apartment,N,N
+100988,13 Nov 2021,Urban,NJ,East,"1,975,000",Fire Resist,Hospitality,Y,Y
+100260,14 Nov 2021,Urban,WI,Midwest,"2,070,000",Masonry,Apartment,N,N
+100302,14 Nov 2021,Urban,NY,East,"847,300",Frame,Apartment,Y,Y
+100274,15 Nov 2021,Urban,NY,East,"2,029,750",Frame,Apartment,N,N
+100209,16 Nov 2021,Rural,NY,East,"2,636,313",Frame,Farming,N,N
+100991,16 Nov 2021,Urban,NY,East,"2,080,000",Masonry,Hospitality,Y,Y
+100992,16 Nov 2021,Urban,NJ,East,"205,000",Fire Resist,Retail,Y,Y
+100993,16 Nov 2021,Urban,NJ,East,"1,936,200",Frame,Farming,N,N
+100994,17 Nov 2021,Urban,WI,Midwest,"1,403,100",Frame,Medical,N,N
+100259,18 Nov 2021,Urban,MI,Central,"315,000",Frame,Apartment,N,N
+100273,19 Nov 2021,Urban,NY,East,"2,000,000",Masonry,Apartment,Y,Y
+100996,19 Nov 2021,Urban,NY,East,"9,900,000",Frame,Apartment,Y,Y
+100998,19 Nov 2021,Urban,MI,Central,"3,255,300",Frame,Hospitality,N,N
+100999,19 Nov 2021,Rural,NY,East,"4,477,175",Frame,Farming,Y,N
+101000,19 Nov 2021,Urban,NY,East,"2,395,000",Frame,Hospitality,N,Y
+100257,20 Nov 2021,Urban,NY,East,"5,550,000",Fire Resist,Apartment,Y,Y
+100258,21 Nov 2021,Urban,NY,East,"1,922,800",Metal Clad,Office Bldg,Y,Y
+101003,21 Nov 2021,Urban,NJ,East,"3,028,850",Frame,Farming,Y,N
+101005,21 Nov 2021,Rural,NY,East,"10,811,785",Metal Clad,Retail,N,N
+100208,22 Nov 2021,Urban,NY,East,"30,000",Fire Resist,Service,Y,Y
+101008,22 Nov 2021,Urban,NY,East,"15,700,000",Frame,Office Bldg,Y,Y
+101009,22 Nov 2021,Urban,WI,Midwest,"5,503,255",Masonry,Office Bldg,N,N
+100307,23 Nov 2021,Urban,WI,Midwest,"5,015,000",Masonry,Manufacturing,N,N
+101011,23 Nov 2021,Urban,MI,Central,"601,000",Frame,Other,N,N
+101012,24 Nov 2021,Urban,NJ,East,"1,563,500",Frame,Retail,Y,Y
+100271,25 Nov 2021,Rural,NY,East,"10,979,275",Frame,Farming,N,N
+100301,25 Nov 2021,Urban,NY,East,"6,198,000",Frame,Office Bldg,Y,Y
+101016,25 Nov 2021,Urban,WI,Midwest,"504,000",Frame,Apartment,N,N
+101019,26 Nov 2021,Urban,WI,Midwest,"2,211,300",Masonry,Service,Y,Y
+100336,27 Nov 2021,Rural,VT,Northeast,"6,000,902",Frame,Farming,Y,Y
+101023,27 Nov 2021,Urban,NY,East,"660,473",Frame,Apartment,N,N
+101024,27 Nov 2021,Urban,NJ,East,"4,978,985",Frame,Farming,Y,N
+100206,28 Nov 2021,Urban,NY,East,"5,213,100",Frame,Apartment,Y,Y
+100286,28 Nov 2021,Rural,NY,East,"2,336,132",Metal Clad,Farming,N,N
+100324,28 Nov 2021,Urban,NJ,East,"6,253,000",Frame,Apartment,Y,Y
+100334,28 Nov 2021,Urban,NY,East,"1,500,000",Fire Resist,Hospitality,Y,Y
+100335,28 Nov 2021,Rural,WI,Midwest,"2,984,500",Metal Clad,Farming,N,N
+101025,28 Nov 2021,Urban,WI,Midwest,"2,502,600",Masonry,Apartment,Y,Y
+101029,28 Nov 2021,Urban,NY,East,"8,115,500",Fire Resist,Apartment,Y,Y
+101031,29 Nov 2021,Rural,NY,East,"2,162,291",Frame,Farming,N,N
+100205,30 Nov 2021,Rural,WI,Midwest,"4,064,995",Masonry,Farming,N,N
+100222,30 Nov 2021,Rural,NY,East,"3,295,800",Frame,Farming,N,N
+101034,30 Nov 2021,Urban,NY,East,"9,710,700",Frame,Apartment,Y,Y
+100221,1 Dec 2021,Urban,NY,East,"2,350,000",Masonry,Apartment,Y,Y
+100246,1 Dec 2021,Urban,NJ,East,"1,807,440",Frame,Organization,Y,Y
+100298,1 Dec 2021,Urban,WI,Midwest,"3,175,400",Masonry,Office Bldg,Y,Y
+101035,1 Dec 2021,Urban,WI,Midwest,"3,741,300",Fire Resist,Apartment,Y,Y
+100333,2 Dec 2021,Rural,NY,East,"2,806,200",Frame,Farming,N,N
+101036,2 Dec 2021,Urban,VT,Northeast,"6,169,400",Frame,Apartment,Y,Y
+101037,2 Dec 2021,Urban,NY,East,"2,325,718",Metal Clad,Manufacturing,N,N
+101039,3 Dec 2021,Urban,NY,East,"245,000",Frame,Service,N,N
+101042,3 Dec 2021,Urban,WI,Midwest,"4,201,800",Frame,Farming,N,N
+101043,4 Dec 2021,Rural,WI,Midwest,"2,820,265",Frame,Farming,N,N
+101044,4 Dec 2021,Urban,NY,East,"12,220,000",Frame,Office Bldg,Y,Y
+100219,5 Dec 2021,Urban,NY,East,"1,144,300",Frame,Apartment,Y,Y
+100220,5 Dec 2021,Urban,NY,East,"4,530,000",Frame,Apartment,Y,Y
+100235,5 Dec 2021,Urban,ME,Northeast,"552,300",Frame,Apartment,N,N
+100300,5 Dec 2021,Urban,NY,East,"2,000,300",Masonry,Office Bldg,N,N
+101046,5 Dec 2021,Urban,NJ,East,"3,990,000",Frame,Apartment,Y,Y
+100366,7 Dec 2021,Urban,NJ,East,"5,850,000",Frame,Apartment,Y,Y
+101052,7 Dec 2021,Urban,NJ,East,"6,250,000",Frame,Apartment,Y,Y
+101053,7 Dec 2021,Urban,NH,Northeast,"1,327,600",Frame,Apartment,N,N
+101054,7 Dec 2021,Urban,NY,East,"1,510,000",Masonry,Hospitality,N,N
+100234,8 Dec 2021,Urban,NY,East,"3,871,000",Frame,Apartment,Y,Y
+100269,9 Dec 2021,Urban,NY,East,"513,300",Frame,Apartment,N,N
+100317,9 Dec 2021,Rural,NY,East,"2,943,800",Frame,Farming,N,N
+100318,9 Dec 2021,Urban,WI,Midwest,"3,952,500",Masonry,Manufacturing,Y,Y
+100319,9 Dec 2021,Urban,NY,East,"8,923,000",Frame,Apartment,Y,Y
+101058,9 Dec 2021,Urban,WI,Midwest,"2,900,000",Fire Resist,Apartment,Y,Y
+101061,9 Dec 2021,Urban,NY,East,"6,450,000",Frame,Office Bldg,Y,Y
+100365,10 Dec 2021,Urban,NY,East,"4,479,400",Frame,Apartment,N,N
+100374,11 Dec 2021,Urban,WI,Midwest,"2,030,600",Frame,Farming,N,N
+101066,11 Dec 2021,Rural,NY,East,"2,013,357",Frame,Farming,N,N
+101067,11 Dec 2021,Rural,NY,East,"4,017,155",Frame,Farming,N,N
+101068,11 Dec 2021,Urban,NY,East,"11,650,000",Frame,Office Bldg,Y,Y
+100244,12 Dec 2021,Urban,NY,East,"9,250,000",Frame,Apartment,Y,Y
+101069,12 Dec 2021,Rural,VT,Northeast,"2,198,800",Frame,Farming,N,N
+101070,12 Dec 2021,Rural,NY,East,"3,553,009",Frame,Farming,N,N
+101071,12 Dec 2021,Urban,WI,Midwest,"1,063,100",Masonry,Apartment,Y,Y
+101073,13 Dec 2021,Urban,NY,East,"2,854,500",Masonry,Apartment,Y,Y
+101074,13 Dec 2021,Urban,NJ,East,"3,356,200",Masonry,Construction,Y,Y
+100364,14 Dec 2021,Rural,NY,East,"1,882,600",Frame,Farming,N,N
+101075,14 Dec 2021,Rural,NY,East,"2,393,232",Frame,Farming,N,N
+101076,14 Dec 2021,Urban,NY,East,"14,678,200",Frame,Office Bldg,Y,Y
+100218,17 Dec 2021,Rural,NY,East,"5,017,360",Frame,Farming,N,N
+101083,18 Dec 2021,Urban,NY,East,"2,625,000",Frame,Apartment,Y,Y
+101088,19 Dec 2021,Urban,NY,East,"285,700",Frame,Office Bldg,N,N
+101089,19 Dec 2021,Urban,NY,East,"275,000",Fire Resist,Retail,Y,N
+101090,19 Dec 2021,Urban,NY,East,"10,396,250",Frame,Office Bldg,Y,Y
+101091,19 Dec 2021,Urban,NY,East,"27,208,210",Fire Resist,Apartment,Y,Y
+101092,19 Dec 2021,Urban,WI,Midwest,"1,740,000",Masonry,Office Bldg,N,N
+101093,19 Dec 2021,Rural,WI,Midwest,"2,464,755",Metal Clad,Farming,N,N
+100347,20 Dec 2021,Urban,NY,East,"535,000",Frame,Office Bldg,N,N
+101094,20 Dec 2021,Urban,NJ,East,"2,837,500",Frame,Manufacturing,Y,Y
+100204,21 Dec 2021,Urban,WI,Midwest,"1,400,000",Masonry,Organization,N,N
+100344,21 Dec 2021,Urban,WI,Midwest,"1,711,268",Frame,Manufacturing,N,N
+100346,21 Dec 2021,Urban,NY,East,"1,780,000",Masonry,Hospitality,Y,Y
+100391,21 Dec 2021,Urban,NY,East,"10,746,600",Frame,Apartment,Y,Y
+101096,21 Dec 2021,Urban,NY,East,"645,000",Fire Resist,Retail,N,N
+100203,22 Dec 2021,Rural,NY,East,"3,724,339",Frame,Farming,N,N
+100231,22 Dec 2021,Urban,NY,East,"12,493,000",Frame,Apartment,Y,Y
+101098,22 Dec 2021,Urban,WI,Midwest,"539,040",Frame,Retail,N,N
+101100,22 Dec 2021,Urban,NY,East,"2,159,000",Frame,Retail,N,N
+100202,23 Dec 2021,Urban,NJ,East,"3,750,000",Frame,Apartment,Y,Y
+100217,23 Dec 2021,Rural,NY,East,"100,000",Metal Clad,Farming,N,N
+101102,23 Dec 2021,Rural,NY,East,"1,121,600",Metal Clad,Farming,N,N
+100305,24 Dec 2021,Urban,NY,East,"9,000,000",Fire Resist,Apartment,Y,Y
+101104,24 Dec 2021,Urban,NY,East,"292,200",Frame,Apartment,Y,Y
+101105,24 Dec 2021,Urban,NH,Northeast,"345,000",Metal Clad,Retail,N,N
+100201,25 Dec 2021,Urban,NY,East,"11,575,700",Frame,Apartment,Y,Y
+100230,25 Dec 2021,Urban,OH,Central,"608,500",Frame,Apartment,N,N
+100295,25 Dec 2021,Urban,NJ,East,"5,114,500",Frame,Office Bldg,Y,Y
+100360,25 Dec 2021,Urban,WI,Midwest,"4,822,450",Masonry,Office Bldg,Y,Y
+100361,25 Dec 2021,Urban,NY,East,"1,125,600",Masonry,Apartment,N,N
+101107,25 Dec 2021,Urban,NY,East,"9,377,600",Frame,Apartment,Y,Y
+101109,25 Dec 2021,Rural,NY,East,"3,920,500",Frame,Farming,N,N
+100229,26 Dec 2021,Urban,NH,Northeast,"626,000",Masonry,Office Bldg,N,N
+100282,26 Dec 2021,Rural,WI,Midwest,"4,132,600",Frame,Farming,N,N
+101111,26 Dec 2021,Rural,NY,East,"6,235,057",Frame,Farming,N,N
+100400,27 Dec 2021,Rural,VT,Northeast,"1,960,000",Frame,Farming,N,N
+101113,27 Dec 2021,Rural,NY,East,"2,500,000",Metal Clad,Farming,N,N
+101114,27 Dec 2021,Urban,IL,Midwest,"3,883,300",Metal Clad,Farming,N,N
+100200,28 Dec 2021,Urban,NY,East,"1,425,000",Masonry,Apartment,N,N
+100330,28 Dec 2021,Urban,NY,East,"1,545,100",Frame,Office Bldg,Y,Y
+101115,28 Dec 2021,Urban,WI,Midwest,"1,665,100",Frame,Apartment,N,N
+101116,29 Dec 2021,Urban,NY,East,"8,245,000",Frame,Apartment,Y,Y
+100216,30 Dec 2021,Urban,NJ,East,"2,432,600",Frame,Retail,Y,Y
+100389,30 Dec 2021,Urban,NY,East,"1,480,000",Fire Resist,Hospitality,Y,Y
+101117,30 Dec 2021,Urban,NY,East,"9,050,000",Frame,Apartment,Y,Y
+101120,30 Dec 2021,Rural,NY,East,"1,480,755",Frame,Farming,N,N
+101121,31 Dec 2021,Urban,VT,Northeast,"4,101,750",Fire Resist,Office Bldg,Y,Y
+101122,31 Dec 2021,Urban,OH,Central,"1,739,100",Frame,Apartment,N,N
+101123,31 Dec 2021,Urban,NY,East,"2,250,000",Frame,Office Bldg,Y,Y
+101125,31 Dec 2021,Urban,NY,East,"16,482,200",Frame,Office Bldg,Y,Y
+101126,31 Dec 2021,Urban,WI,Midwest,"1,776,800",Frame,Farming,N,N
+100275,25 Jan 2021,Urban,WI,Midwest,"53,410,614",Frame,Construction,Y,Y
+100277,25 Jan 2021,Urban,NJ,East,"3,189,300",Masonry,Service,Y,Y
+100312,25 Jan 2021,Rural,IL,Midwest,"3,145,700",Frame,Education,N,N
+100327,25 Jan 2021,Urban,WI,Midwest,"1,451,100",Frame,Recreation,N,N
+100326,26 Jan 2021,Urban,OH,Central,"1,787,900",Frame,Office Bldg,N,N
+100379,26 Jan 2021,Urban,NY,East,"18,777,355",Frame,Apartment,Y,Y
+100310,28 Jan 2021,Urban,WI,Midwest,"8,800,000",Fire Resist,Office Bldg,Y,Y
+100341,28 Jan 2021,Urban,NY,East,"1,123,000",Frame,Office Bldg,Y,Y
+100289,29 Jan 2021,Rural,NY,East,"2,145,420",Frame,Farming,N,N
+100290,29 Jan 2021,Urban,NY,East,"18,933,000",Frame,Office Bldg,Y,Y
+100291,29 Jan 2021,Urban,NY,East,"21,400,000",Fire Resist,Apartment,Y,Y
+100340,30 Jan 2021,Urban,NY,East,"3,754,000",Frame,Office Bldg,Y,Y
+100415,31 Jan 2021,Urban,NY,East,"9,650,000",Frame,Office Bldg,Y,Y
+100421,31 Jan 2021,Urban,NY,East,"9,503,000",Frame,Office Bldg,Y,Y
+100304,1 Feb 2021,Urban,NJ,East,"1,688,300",Frame,Hospitality,N,Y
+100414,2 Feb 2021,Urban,WI,Midwest,"17,856,705",Masonry,Apartment,Y,Y
+100420,2 Feb 2021,Urban,NY,East,"7,577,000",Frame,Apartment,Y,Y
+100481,2 Feb 2021,Urban,WI,Midwest,"1,990,915",Masonry,Office Bldg,N,N
+100352,3 Feb 2021,Urban,NJ,East,"1,245,000",Frame,Hospitality,Y,Y
+100496,4 Feb 2021,Urban,IL,Midwest,"1,895,000",Masonry,Office Bldg,N,N
+100309,5 Feb 2021,Urban,WI,Midwest,"5,000,368",Masonry,Manufacturing,N,N
+100413,5 Feb 2021,Urban,NY,East,"8,397,700",Frame,Apartment,Y,Y
+100498,6 Feb 2021,Urban,NJ,East,"36,356,000",Fire Resist,Apartment,Y,Y
+100499,7 Feb 2021,Urban,NJ,East,"16,932,600",Fire Resist,Apartment,Y,Y
+100509,7 Feb 2021,Urban,OH,Central,"1,849,000",Metal Clad,Retail,N,N
+100371,8 Feb 2021,Urban,OH,Central,"218,490",Frame,Apartment,N,N
+100412,8 Feb 2021,Urban,NJ,East,"3,052,600",Frame,Apartment,Y,N
+100370,9 Feb 2021,Urban,WI,Midwest,"8,126,500",Masonry,Organization,Y,Y
+100377,9 Feb 2021,Urban,NY,East,"11,400,000",Masonry,Apartment,Y,Y
+100452,9 Feb 2021,Urban,NJ,East,"5,918,400",Frame,Farming,Y,N
+100459,9 Feb 2021,Rural,NY,East,"2,550,750",Frame,Farming,N,N
+100325,13 Feb 2021,Urban,NY,East,"140,000",Masonry,Retail,N,N
+100419,13 Feb 2021,Urban,NY,East,"725,000",Masonry,Service,N,N
+100512,13 Feb 2021,Urban,NY,East,"10,098,900",Frame,Office Bldg,Y,Y
+100513,13 Feb 2021,Rural,NY,East,"2,937,200",Frame,Farming,N,N
+100514,13 Feb 2021,Urban,NJ,East,"3,644,800",Frame,Apartment,Y,Y
+100471,15 Feb 2021,Urban,NY,East,"13,882,500",Frame,Apartment,Y,Y
+100396,16 Feb 2021,Rural,NY,East,"2,050,000",Frame,Farming,N,N
+100436,17 Feb 2021,Rural,NY,East,"3,805,200",Metal Clad,Farming,N,N
+100492,18 Feb 2021,Rural,NY,East,"1,417,800",Frame,Organization,N,N
+100494,18 Feb 2021,Rural,WI,Midwest,"5,613,900",Masonry,Farming,N,N
+100493,19 Feb 2021,Urban,NJ,East,"2,471,100",Frame,Farming,N,N
+100351,20 Feb 2021,Rural,VT,Northeast,"2,985,950",Frame,Farming,N,N
+100411,20 Feb 2021,Urban,WI,Midwest,"9,062,700",Fire Resist,Hospitality,N,N
+100469,21 Feb 2021,Urban,NY,East,"7,350,000",Frame,Apartment,Y,Y
+100418,22 Feb 2021,Urban,NJ,East,"1,300,900",Masonry,Office Bldg,N,N
+100511,22 Feb 2021,Urban,NY,East,"12,750,000",Frame,Apartment,Y,Y
+100536,22 Feb 2021,Urban,NY,East,"7,585,000",Fire Resist,Office Bldg,Y,Y
+100537,22 Feb 2021,Urban,NY,East,"9,493,313",Masonry,Apartment,Y,Y
+100394,23 Feb 2021,Urban,NY,East,"10,302,000",Fire Resist,Office Bldg,Y,Y
+100367,24 Feb 2021,Urban,NH,Northeast,"2,500,000",Metal Clad,Manufacturing,N,N
+100408,24 Feb 2021,Urban,WI,Midwest,"4,833,900",Masonry,Office Bldg,N,N
+100410,24 Feb 2021,Urban,NY,East,"2,029,500",Metal Clad,Apartment,Y,Y
+100369,25 Feb 2021,Rural,NY,East,"2,233,200",Frame,Farming,N,N
+100409,25 Feb 2021,Urban,NY,East,"2,001,250",Frame,Office Bldg,Y,Y
+100546,27 Feb 2021,Rural,NY,East,"1,498,850",Metal Clad,Farming,N,N
+100434,1 Mar 2021,Urban,NJ,East,"405,556",Frame,Apartment,Y,N
+100523,1 Mar 2021,Urban,NY,East,"1,311,220",Frame,Apartment,N,N
+100433,2 Mar 2021,Urban,NY,East,"1,769,785",Frame,Hospitality,Y,Y
+100566,2 Mar 2021,Urban,OH,Central,"5,377,000",Frame,Apartment,Y,Y
+100522,5 Mar 2021,Rural,NY,East,"1,599,860",Frame,Farming,N,N
+100457,6 Mar 2021,Urban,NY,East,"10,780,450",Frame,Apartment,Y,Y
+100521,6 Mar 2021,Urban,NJ,East,"3,839,200",Masonry,Apartment,N,N
+100532,7 Mar 2021,Urban,NJ,East,"296,000",Frame,Apartment,N,N
+100533,7 Mar 2021,Rural,WI,Midwest,"2,707,630",Frame,Farming,N,N
+100467,8 Mar 2021,Urban,NJ,East,"2,249,500",Frame,Farming,N,N
+100583,8 Mar 2021,Urban,NY,East,"7,611,000",Masonry,Office Bldg,Y,Y
+100404,9 Mar 2021,Rural,WI,Midwest,"1,152,600",Frame,Farming,N,N
+100554,9 Mar 2021,Urban,NJ,East,"9,115,500",Frame,Apartment,Y,Y
+100446,11 Mar 2021,Urban,NY,East,"1,600,000",Masonry,Hospitality,Y,Y
+100465,12 Mar 2021,Urban,NJ,East,"2,575,965",Frame,Farming,Y,N
+100490,12 Mar 2021,Urban,NY,East,"220,000",Metal Clad,Hospitality,N,N
+100456,14 Mar 2021,Urban,NY,East,"1,800,000",Frame,Apartment,Y,Y
+100489,14 Mar 2021,Urban,NJ,East,"16,998,000",Frame,Office Bldg,Y,Y
+100545,14 Mar 2021,Urban,NY,East,"14,450,000",Frame,Office Bldg,Y,Y
+100543,15 Mar 2021,Urban,NY,East,"2,835,800",Metal Clad,Manufacturing,N,N
+100564,15 Mar 2021,Urban,WI,Midwest,"2,280,000",Frame,Hospitality,Y,Y
+100430,17 Mar 2021,Urban,NJ,East,"3,960,000",Frame,Office Bldg,Y,Y
+100477,17 Mar 2021,Urban,VT,Northeast,"5,272,975",Frame,Apartment,Y,Y
+100478,17 Mar 2021,Urban,VT,Northeast,"6,354,220",Frame,Apartment,Y,Y
+100444,21 Mar 2021,Urban,NY,East,"8,892,200",Masonry,Apartment,Y,Y
+100582,22 Mar 2021,Urban,NJ,East,"4,651,680",Frame,Apartment,Y,Y
+100487,23 Mar 2021,Urban,NY,East,"5,990,067",Frame,Apartment,N,N
+100519,25 Mar 2021,Rural,NY,East,"4,102,500",Frame,Farming,N,N
+100462,26 Mar 2021,Urban,NY,East,"3,400,000",Frame,Construction,Y,Y
+100486,26 Mar 2021,Urban,NY,East,"9,973,900",Frame,Apartment,Y,Y
+100463,27 Mar 2021,Urban,NY,East,"15,480,000",Frame,Office Bldg,Y,Y
+100595,27 Mar 2021,Rural,NY,East,"2,446,600",Frame,Farming,N,N
+100617,27 Mar 2021,Urban,VT,Northeast,"8,861,500",Frame,Office Bldg,N,N
+100580,30 Mar 2021,Urban,NH,Northeast,"97,920",Frame,Office Bldg,Y,Y
+100581,30 Mar 2021,Urban,NY,East,"5,150,000",Frame,Apartment,Y,Y
+100475,31 Mar 2021,Rural,WI,Midwest,"1,451,662",Masonry,Farming,N,N
+100503,31 Mar 2021,Urban,NJ,East,"1,761,960",Masonry,Office Bldg,N,N
+100504,31 Mar 2021,Rural,NY,East,"1,649,105",Frame,Farming,N,N
+100616,31 Mar 2021,Urban,NY,East,"2,329,500",Frame,Apartment,N,N
+100614,3 Apr 2021,Urban,NY,East,"721,500",Frame,Apartment,Y,Y
+100529,5 Apr 2021,Urban,NJ,East,"2,455,000",Frame,Apartment,Y,Y
+100551,6 Apr 2021,Urban,NJ,East,"3,363,463",Frame,Farming,Y,N
+100501,7 Apr 2021,Rural,WI,Midwest,"1,568,100",Frame,Farming,N,N
+100516,7 Apr 2021,Urban,WI,Midwest,"2,063,960",Masonry,Organization,N,N
+100542,7 Apr 2021,Urban,VT,Northeast,"1,806,500",Frame,Apartment,N,Y
+100625,7 Apr 2021,Urban,NY,East,"49,837,500",Fire Resist,Apartment,Y,Y
+100540,9 Apr 2021,Rural,NY,East,"2,244,800",Frame,Farming,N,N
+100663,10 Apr 2021,Urban,NJ,East,"10,346,950",Frame,Office Bldg,N,Y
+100539,11 Apr 2021,Urban,NJ,East,"8,150,000",Frame,Apartment,N,Y
+100642,11 Apr 2021,Urban,NY,East,"1,697,200",Frame,Other,N,N
+100549,15 Apr 2021,Urban,VT,Northeast,"3,334,353",Metal Clad,Farming,Y,Y
+100680,15 Apr 2021,Rural,WI,Midwest,"6,020,060",Masonry,Farming,N,N
+100560,16 Apr 2021,Urban,NY,East,"1,381,370",Frame,Organization,N,N
+100629,16 Apr 2021,Urban,NY,East,"2,442,400",Frame,Retail,N,N
+100631,16 Apr 2021,Urban,NJ,East,"4,193,603",Frame,Farming,Y,N
+100572,17 Apr 2021,Rural,WI,Midwest,"3,725,520",Masonry,Farming,N,N
+100630,17 Apr 2021,Urban,NY,East,"7,394,300",Frame,Apartment,Y,Y
+100637,17 Apr 2021,Urban,NY,East,"2,402,500",Frame,Apartment,Y,Y
+100659,17 Apr 2021,Urban,NJ,East,"1,693,000",Frame,Farming,Y,N
+100527,18 Apr 2021,Urban,NJ,East,"9,148,076",Frame,Manufacturing,Y,Y
+100638,18 Apr 2021,Urban,NJ,East,"3,950,000",Frame,Apartment,Y,Y
+100679,18 Apr 2021,Urban,NJ,East,"14,183,900",Frame,Apartment,Y,Y
+100678,21 Apr 2021,Urban,WI,Midwest,"35,245,000",Masonry,Apartment,Y,Y
+100570,22 Apr 2021,Urban,WI,Midwest,"294,700",Masonry,Office Bldg,N,N
+100578,25 Apr 2021,Urban,OH,Central,"4,488,000",Frame,Apartment,N,N
+100611,25 Apr 2021,Urban,NJ,East,"1,595,500",Frame,Office Bldg,Y,Y
+100621,25 Apr 2021,Urban,MI,Central,"394,220",Frame,Retail,N,N
+100622,25 Apr 2021,Urban,WI,Midwest,"723,900",Fire Resist,Office Bldg,Y,Y
+100623,25 Apr 2021,Rural,NY,East,"2,006,700",Frame,Farming,N,N
+100604,26 Apr 2021,Urban,WI,Midwest,"979,572",Frame,Retail,N,N
+100610,27 Apr 2021,Urban,NY,East,"5,086,300",Frame,Office Bldg,Y,Y
+100591,29 Apr 2021,Rural,NY,East,"4,353,100",Frame,Farming,N,N
+100557,30 Apr 2021,Urban,NY,East,"2,056,700",Frame,Other,Y,Y
+100636,30 Apr 2021,Urban,IL,Midwest,"4,886,675",Masonry,Apartment,N,N
+100628,1 May 2021,Rural,NY,East,"1,973,200",Frame,Farming,N,N
+100650,2 May 2021,Urban,NY,East,"4,156,000",Masonry,Hospitality,Y,Y
+100651,2 May 2021,Urban,NJ,East,"1,045,000",Frame,Apartment,Y,N
+100569,3 May 2021,Urban,NY,East,"800,000",Frame,Construction,N,N
+100609,3 May 2021,Urban,NJ,East,"4,483,000",Frame,Office Bldg,Y,Y
+100649,4 May 2021,Rural,NY,East,"3,074,775",Frame,Farming,N,N
+100656,6 May 2021,Urban,MN,Midwest,"1,834,200",Frame,Hospitality,Y,Y
+100677,6 May 2021,Urban,NY,East,"13,370,000",Frame,Apartment,Y,Y
+100704,6 May 2021,Urban,NJ,East,"14,474,600",Fire Resist,Apartment,Y,Y
+100713,6 May 2021,Rural,WI,Midwest,"2,103,390",Masonry,Farming,N,N
+100584,7 May 2021,Urban,WI,Midwest,"7,750,100",Masonry,Other,N,N
+100674,7 May 2021,Urban,NY,East,"9,250,000",Frame,Office Bldg,Y,Y
+100589,8 May 2021,Rural,WI,Midwest,"2,867,650",Frame,Farming,N,N
+100590,8 May 2021,Rural,WI,Midwest,"2,798,650",Masonry,Farming,N,N
+100675,8 May 2021,Urban,NY,East,"2,468,300",Frame,Apartment,Y,Y
+100648,9 May 2021,Urban,NY,East,"270,000",Masonry,Retail,N,N
+100683,9 May 2021,Urban,NJ,East,"1,374,100",Masonry,Office Bldg,Y,Y
+100647,10 May 2021,Urban,WI,Midwest,"4,077,100",Masonry,Apartment,Y,Y
+100602,11 May 2021,Rural,NY,East,"1,651,300",Frame,Farming,N,N
+100672,11 May 2021,Urban,VT,Northeast,"2,785,000",Frame,Organization,N,N
+100600,12 May 2021,Urban,WI,Midwest,"3,086,048",Frame,Hospitality,Y,Y
+100655,12 May 2021,Urban,NY,East,"1,974,300",Masonry,Organization,Y,Y
+100671,12 May 2021,Rural,NY,East,"3,660,780",Frame,Farming,N,N
+100646,13 May 2021,Urban,NY,East,"2,550,000",Frame,Apartment,Y,Y
+100618,14 May 2021,Urban,NY,East,"2,730,000",Metal Clad,Hospitality,Y,Y
+100681,14 May 2021,Urban,NY,East,"963,100",Metal Clad,Apartment,Y,Y
+100619,15 May 2021,Rural,NY,East,"1,419,500",Frame,Farming,N,N
+100627,16 May 2021,Urban,NY,East,"2,758,482",Fire Resist,Apartment,Y,Y
+100670,16 May 2021,Urban,OH,Central,"661,900",Frame,Apartment,N,N
+100689,16 May 2021,Urban,NY,East,"19,451,600",Frame,Office Bldg,Y,Y
+100726,16 May 2021,Urban,NY,East,"1,292,345",Frame,Office Bldg,N,N
+100702,17 May 2021,Urban,VT,Northeast,"9,702,682",Frame,Apartment,N,N
+100703,17 May 2021,Urban,NJ,East,"10,198,700",Fire Resist,Office Bldg,Y,Y
+100635,18 May 2021,Urban,MI,Central,"714,000",Frame,Apartment,N,N
+100736,18 May 2021,Rural,VT,Northeast,"2,099,525",Frame,Farming,N,N
+100737,18 May 2021,Urban,NJ,East,"16,200,000",Frame,Office Bldg,Y,Y
+100644,19 May 2021,Urban,NY,East,"2,570,600",Masonry,Office Bldg,Y,Y
+100643,20 May 2021,Urban,NY,East,"1,280,000",Fire Resist,Hospitality,Y,Y
+100698,20 May 2021,Urban,NY,East,"205,000",Fire Resist,Retail,N,N
+100652,21 May 2021,Urban,OH,Central,"1,760,800",Frame,Apartment,N,N
+100653,21 May 2021,Urban,NJ,East,"2,812,559",Frame,Farming,N,N
+100705,21 May 2021,Rural,NY,East,"3,943,000",Frame,Farming,N,N
+100718,21 May 2021,Urban,NY,East,"3,107,790",Masonry,Office Bldg,N,Y
+100744,21 May 2021,Urban,NY,East,"9,448,200",Frame,Apartment,Y,Y
+100709,22 May 2021,Rural,MI,Central,"10,617,800",Frame,Manufacturing,Y,Y
+100749,22 May 2021,Urban,NY,East,"847,300",Frame,Apartment,Y,Y
+100751,22 May 2021,Urban,NJ,East,"400,000",Masonry,Office Bldg,N,Y
+100752,22 May 2021,Urban,NY,East,"363,200",Frame,Office Bldg,N,Y
+100696,23 May 2021,Urban,IL,Midwest,"2,922,600",Masonry,Apartment,Y,Y
+100742,23 May 2021,Urban,WI,Midwest,"500,500",Masonry,Apartment,Y,Y
+100666,24 May 2021,Rural,NY,East,"1,927,450",Frame,Farming,N,N
+100667,25 May 2021,Rural,NY,East,"2,660,299",Frame,Farming,N,N
+100740,25 May 2021,Urban,WI,Midwest,"3,980,100",Masonry,Apartment,N,N
+100757,25 May 2021,Urban,WI,Midwest,"2,987,000",Masonry,Apartment,Y,Y
+100750,27 May 2021,Urban,VT,Northeast,"16,429,900",Frame,Apartment,Y,Y
+100756,27 May 2021,Urban,NY,East,"16,950,000",Frame,Apartment,Y,Y
+100754,29 May 2021,Urban,NY,East,"36,909,180",Metal Clad,Manufacturing,Y,Y
+100764,29 May 2021,Urban,NY,East,"9,600,000",Frame,Office Bldg,Y,N
+100724,30 May 2021,Urban,NY,East,"22,050,000",Frame,Office Bldg,Y,Y
+100686,1 Jun 2021,Urban,NY,East,"3,850,000",Frame,Construction,N,Y
+100761,2 Jun 2021,Urban,VT,Northeast,"13,514,081",Frame,Recreation,Y,Y
+100695,3 Jun 2021,Urban,NY,East,"2,000,000",Frame,Hospitality,Y,Y
+100727,3 Jun 2021,Rural,WI,Midwest,"1,658,765",Masonry,Farming,N,N
+100777,3 Jun 2021,Urban,OH,Central,"8,272,853",Masonry,Apartment,N,N
+100774,4 Jun 2021,Urban,NY,East,"6,750,000",Frame,Apartment,Y,Y
+100720,5 Jun 2021,Urban,IL,Midwest,"7,828,000",Masonry,Office Bldg,N,Y
+100723,5 Jun 2021,Urban,NJ,East,"373,500",Frame,Office Bldg,N,N
+100759,5 Jun 2021,Urban,NY,East,"17,050,000",Frame,Office Bldg,Y,Y
+100722,6 Jun 2021,Rural,NY,East,"1,958,400",Frame,Farming,N,N
+100731,6 Jun 2021,Urban,NY,East,"17,746,832",Masonry,Apartment,Y,Y
+100755,6 Jun 2021,Urban,WI,Midwest,"6,040,300",Masonry,Apartment,Y,N
+100745,7 Jun 2021,Rural,WI,Midwest,"2,224,219",Frame,Farming,N,N
+100746,7 Jun 2021,Urban,NY,East,"847,300",Frame,Office Bldg,Y,Y
+100747,7 Jun 2021,Urban,WI,Midwest,"782,428",Masonry,Apartment,N,N
+100780,8 Jun 2021,Urban,NJ,East,"299,400",Frame,Office Bldg,Y,N
+100760,9 Jun 2021,Urban,WI,Midwest,"1,397,100",Masonry,Office Bldg,Y,Y
+100781,9 Jun 2021,Urban,NY,East,"1,714,835",Frame,Apartment,N,N
+100783,9 Jun 2021,Urban,MI,Central,"1,991,600",Frame,Organization,N,N
+100768,10 Jun 2021,Urban,WI,Midwest,"3,701,573",Frame,Farming,N,N
+100769,10 Jun 2021,Urban,NJ,East,"5,460,000",Frame,Apartment,Y,Y
+100775,10 Jun 2021,Rural,NY,East,"3,136,600",Frame,Farming,N,N
+100773,11 Jun 2021,Urban,NY,East,"1,780,000",Frame,Hospitality,Y,Y
+100789,26 Aug 2021,Urban,NY,East,"230,000",Frame,Manufacturing,Y,Y
+100790,26 Aug 2021,Urban,NJ,East,"1,463,800",Frame,Farming,Y,N
+100792,26 Aug 2021,Rural,VT,Northeast,"3,579,800",Metal Clad,Farming,N,N
+100793,27 Aug 2021,Urban,NY,East,"1,275,600",Frame,Apartment,N,Y
+100797,29 Aug 2021,Rural,NY,East,"5,781,710",Frame,Farming,N,N
+100799,30 Aug 2021,Urban,NH,Northeast,"320,000",Masonry,Retail,N,N
+100800,30 Aug 2021,Urban,NY,East,"1,379,400",Frame,Apartment,N,N
+100801,31 Aug 2021,Rural,WI,Midwest,"6,385,452",Frame,Farming,Y,N
+100803,31 Aug 2021,Urban,WI,Midwest,"4,671,000",Masonry,Apartment,Y,Y
+100805,1 Sep 2021,Rural,NY,East,"199,000",Frame,Retail,N,N
+100808,2 Sep 2021,Urban,WI,Midwest,"2,100,000",Frame,Apartment,N,N
+100810,2 Sep 2021,Urban,NY,East,"1,875,000",Masonry,Hospitality,Y,Y
+100811,2 Sep 2021,Rural,WI,Midwest,"2,201,500",Frame,Farming,N,N
+100813,2 Sep 2021,Urban,NY,East,"1,986,100",Frame,Apartment,N,N
+100814,2 Sep 2021,Urban,WI,Midwest,"105,000",Masonry,Other,N,N
+100817,3 Sep 2021,Urban,NJ,East,"3,700,000",Masonry,Office Bldg,Y,Y
+100818,3 Sep 2021,Urban,IL,Midwest,"29,128,000",Fire Resist,Apartment,Y,Y
+100819,5 Sep 2021,Urban,VT,Northeast,"10,700,000",Frame,Hospitality,Y,Y
+100821,5 Sep 2021,Rural,WI,Midwest,"1,778,600",Frame,Farming,N,N
+100822,6 Sep 2021,Rural,NY,East,"3,866,420",Frame,Farming,N,N
+100823,6 Sep 2021,Urban,NY,East,"1,037,500",Frame,Manufacturing,N,N
+100824,7 Sep 2021,Rural,NY,East,"2,480,800",Frame,Farming,N,N
+100825,7 Sep 2021,Urban,WI,Midwest,"578,400",Masonry,Office Bldg,N,N
+100826,7 Sep 2021,Urban,NY,East,"3,178,400",Frame,Office Bldg,Y,Y
+100828,9 Sep 2021,Urban,ME,Northeast,"7,150,000",Masonry,Apartment,Y,Y
+100831,10 Sep 2021,Urban,NJ,East,"1,604,800",Frame,Hospitality,Y,Y
+100832,10 Sep 2021,Urban,NY,East,"18,275,350",Frame,Office Bldg,Y,Y
+100834,11 Sep 2021,Urban,NY,East,"710,400",Masonry,Office Bldg,N,N
+100836,11 Sep 2021,Urban,WI,Midwest,"2,205,950",Masonry,Apartment,N,N
+100837,11 Sep 2021,Urban,WI,Midwest,"8,166,050",Fire Resist,Apartment,N,Y
+100838,11 Sep 2021,Urban,WI,Midwest,"3,222,081",Masonry,Farming,N,N
+100839,13 Sep 2021,Urban,NJ,East,"371,600",Frame,Hospitality,Y,N
+100844,15 Sep 2021,Urban,WI,Midwest,"1,365,000",Masonry,Hospitality,Y,Y
+100845,15 Sep 2021,Urban,NY,East,"24,000,000",Frame,Apartment,Y,Y
+100846,15 Sep 2021,Urban,NY,East,"7,700,000",Fire Resist,Construction,Y,Y
+100850,16 Sep 2021,Urban,IL,Midwest,"4,578,800",Frame,Farming,N,N
+100854,21 Sep 2021,Rural,VT,Northeast,"2,477,200",Frame,Farming,N,N
+100856,22 Sep 2021,Urban,NJ,East,"3,432,600",Frame,Office Bldg,Y,Y
+100857,23 Sep 2021,Rural,IL,Midwest,"172,100",Frame,Farming,N,N
+100859,23 Sep 2021,Urban,NY,East,"11,147,050",Fire Resist,Apartment,Y,Y
+100861,23 Sep 2021,Urban,NY,East,"2,007,000",Frame,Office Bldg,Y,Y
+100863,24 Sep 2021,Urban,NY,East,"9,404,500",Frame,Apartment,Y,Y
+100864,24 Sep 2021,Urban,NY,East,"5,056,900",Fire Resist,Apartment,Y,Y
+100868,26 Sep 2021,Urban,WI,Midwest,"4,577,032",Frame,Farming,N,N
+100869,26 Sep 2021,Urban,NY,East,"953,100",Metal Clad,Office Bldg,N,N
+100870,27 Sep 2021,Rural,NY,East,"2,562,500",Fire Resist,Manufacturing,N,N
+100872,28 Sep 2021,Urban,NY,East,"6,908,000",Frame,Office Bldg,Y,Y
+100873,29 Sep 2021,Urban,VT,Northeast,"1,588,100",Masonry,Recreation,N,N
+100874,30 Sep 2021,Urban,NY,East,"311,200",Frame,Apartment,N,N
+100875,1 Oct 2021,Urban,NY,East,"14,850,000",Frame,Office Bldg,Y,Y
+100876,1 Oct 2021,Urban,NY,East,"1,557,500",Frame,Office Bldg,N,Y
+100878,1 Oct 2021,Urban,NY,East,"4,267,000",Frame,Office Bldg,Y,Y
+100882,3 Oct 2021,Urban,IL,Midwest,"1,702,350",Frame,Apartment,N,N
+100883,4 Oct 2021,Urban,NY,East,"280,600",Frame,Office Bldg,N,N
+100885,4 Oct 2021,Urban,WI,Midwest,"2,025,100",Masonry,Office Bldg,N,N
+100886,4 Oct 2021,Urban,NY,East,"6,748,000",Frame,Apartment,Y,Y
+100887,5 Oct 2021,Urban,WI,Midwest,"2,067,500",Fire Resist,Service,Y,Y
+100889,5 Oct 2021,Urban,NY,East,"3,235,700",Frame,Apartment,Y,Y
+100894,7 Oct 2021,Urban,NY,East,"2,356,100",Frame,Hospitality,Y,Y
+100895,7 Oct 2021,Urban,NY,East,"7,932,500",Frame,Apartment,Y,Y
+100898,10 Oct 2021,Urban,NY,East,"1,851,125",Frame,Office Bldg,N,N
+100900,11 Oct 2021,Urban,NY,East,"8,345,500",Frame,Apartment,Y,Y
+100901,11 Oct 2021,Urban,NY,East,"2,400,000",Frame,Construction,Y,Y
+100903,12 Oct 2021,Urban,WI,Midwest,"1,675,000",Frame,Hospitality,Y,Y
+100904,13 Oct 2021,Urban,NH,Northeast,"145,680",Frame,Office Bldg,N,N
+100908,14 Oct 2021,Urban,NY,East,"13,900,000",Frame,Office Bldg,Y,Y
+100909,14 Oct 2021,Urban,NY,East,"13,575,000",Frame,Office Bldg,Y,Y
+100910,14 Oct 2021,Urban,NY,East,"5,950,500",Metal Clad,Office Bldg,Y,Y
+100912,15 Oct 2021,Urban,OH,Central,"1,569,440",Masonry,Organization,N,N
+100215,17 Oct 2021,Urban,NY,East,"2,131,900",Masonry,Retail,N,N
+100914,17 Oct 2021,Urban,WI,Midwest,"631,410",Frame,Farming,N,N
+100916,18 Oct 2021,Urban,NY,East,"1,856,637",Masonry,Hospitality,Y,Y
+100919,20 Oct 2021,Urban,WI,Midwest,"2,321,900",Frame,Manufacturing,N,N
+100920,20 Oct 2021,Urban,NJ,East,"4,726,686",Frame,Farming,Y,N
+100228,21 Oct 2021,Urban,ME,Northeast,"1,444,255",Frame,Organization,N,N
+100923,21 Oct 2021,Urban,NY,East,"1,830,900",Frame,Office Bldg,N,N
+100927,22 Oct 2021,Urban,VT,Northeast,"1,325,200",Frame,Organization,N,N
+100928,22 Oct 2021,Urban,NY,East,"1,267,625",Frame,Office Bldg,N,N
+100929,22 Oct 2021,Rural,NY,East,"3,409,000",Metal Clad,Farming,N,N
+100214,23 Oct 2021,Urban,NY,East,"33,250,000",Frame,Apartment,Y,Y
+100932,23 Oct 2021,Urban,NJ,East,"320,100",Frame,Apartment,N,N
+100933,23 Oct 2021,Urban,WI,Midwest,"275,000",Masonry,Apartment,N,N
+100934,24 Oct 2021,Urban,WI,Midwest,"1,519,100",Masonry,Apartment,N,N
+100936,26 Oct 2021,Rural,IL,Midwest,"2,182,250",Frame,Farming,N,N
+100250,27 Oct 2021,Rural,WI,Midwest,"4,328,620",Frame,Farming,N,N
+100939,27 Oct 2021,Urban,NJ,East,"1,840,000",Masonry,Apartment,N,N
+100940,28 Oct 2021,Urban,NY,East,"21,250,000",Frame,Office Bldg,Y,Y
+100941,28 Oct 2021,Rural,NY,East,"2,534,633",Frame,Farming,N,N
+100942,28 Oct 2021,Urban,NY,East,"2,494,300",Frame,Apartment,Y,Y
+100943,28 Oct 2021,Urban,NY,East,"2,562,500",Frame,Apartment,Y,Y
+100227,29 Oct 2021,Urban,WI,Midwest,"685,000",Masonry,Hospitality,Y,Y
+100945,29 Oct 2021,Urban,NY,East,"503,000",Masonry,Hospitality,N,Y
+100947,29 Oct 2021,Urban,NY,East,"10,259,600",Frame,Apartment,Y,Y
+100226,30 Oct 2021,Urban,NY,East,"3,798,400",Metal Clad,Office Bldg,Y,Y
+100948,30 Oct 2021,Urban,NJ,East,"2,269,865",Masonry,Retail,Y,Y
+100950,31 Oct 2021,Urban,NY,East,"2,363,700",Frame,Farming,N,N
+100249,1 Nov 2021,Urban,WI,Midwest,"1,960,200",Masonry,Farming,N,N
+100952,1 Nov 2021,Urban,IL,Midwest,"16,833,800",Fire Resist,Apartment,Y,Y
+100953,1 Nov 2021,Rural,NY,East,"4,127,900",Metal Clad,Farming,N,N
+100955,3 Nov 2021,Urban,NJ,East,"2,753,500",Masonry,Office Bldg,Y,Y
+100287,4 Nov 2021,Urban,NY,East,"10,518,041",Frame,Office Bldg,Y,Y
+100956,4 Nov 2021,Urban,NJ,East,"1,554,500",Frame,Farming,N,N
+100959,5 Nov 2021,Urban,NJ,East,"1,115,870",Frame,Farming,Y,N
+100261,6 Nov 2021,Urban,NY,East,"15,625,000",Frame,Office Bldg,Y,Y
+100961,6 Nov 2021,Urban,IL,Midwest,"787,500",Frame,Apartment,N,N
+100962,7 Nov 2021,Urban,NY,East,"15,750,000",Masonry,Apartment,Y,Y
+100966,7 Nov 2021,Urban,OH,Central,"320,000",Masonry,Retail,N,N
+100969,9 Nov 2021,Rural,WI,Midwest,"2,611,400",Frame,Farming,N,N
+100972,9 Nov 2021,Rural,NY,East,"2,398,000",Metal Clad,Farming,N,N
+100974,10 Nov 2021,Urban,NJ,East,"2,329,942",Frame,Farming,Y,N
+100975,10 Nov 2021,Urban,MN,Midwest,"1,305,100",Frame,Apartment,Y,Y
+100977,10 Nov 2021,Rural,NY,East,"4,981,500",Frame,Farming,N,N
+100978,10 Nov 2021,Urban,NY,East,"535,000",Fire Resist,Retail,N,N
+100981,10 Nov 2021,Urban,NY,East,"10,397,500",Frame,Apartment,Y,Y
+100240,11 Nov 2021,Urban,NJ,East,"2,003,000",Masonry,Apartment,Y,Y
+100982,11 Nov 2021,Urban,NY,East,"10,808,800",Frame,Office Bldg,Y,Y
+100983,11 Nov 2021,Urban,NY,East,"1,962,400",Frame,Apartment,N,N
+100239,12 Nov 2021,Urban,NJ,East,"2,423,500",Frame,Apartment,Y,Y
+100985,12 Nov 2021,Rural,NY,East,"3,067,800",Frame,Farming,N,N
+100237,13 Nov 2021,Urban,OH,Central,"1,202,090",Frame,Organization,N,N
+100238,13 Nov 2021,Urban,NJ,East,"3,062,000",Frame,Apartment,Y,Y
+100986,13 Nov 2021,Urban,NY,East,"2,815,900",Metal Clad,Manufacturing,N,N
+100987,13 Nov 2021,Urban,ME,Northeast,"790,000",Masonry,Apartment,N,N
+100988,13 Nov 2021,Urban,NJ,East,"1,975,000",Fire Resist,Hospitality,Y,Y
+100260,14 Nov 2021,Urban,WI,Midwest,"2,070,000",Masonry,Apartment,N,N
+100302,14 Nov 2021,Urban,NY,East,"847,300",Frame,Apartment,Y,Y
+100274,15 Nov 2021,Urban,NY,East,"2,029,750",Frame,Apartment,N,N
+100209,16 Nov 2021,Rural,NY,East,"2,636,313",Frame,Farming,N,N
+100991,16 Nov 2021,Urban,NY,East,"2,080,000",Masonry,Hospitality,Y,Y
+100992,16 Nov 2021,Urban,NJ,East,"205,000",Fire Resist,Retail,Y,Y
+100993,16 Nov 2021,Urban,NJ,East,"1,936,200",Frame,Farming,N,N
+100994,17 Nov 2021,Urban,WI,Midwest,"1,403,100",Frame,Medical,N,N
+100259,18 Nov 2021,Urban,MI,Central,"315,000",Frame,Apartment,N,N
+100273,19 Nov 2021,Urban,NY,East,"2,000,000",Masonry,Apartment,Y,Y
+100996,19 Nov 2021,Urban,NY,East,"9,900,000",Frame,Apartment,Y,Y
+100998,19 Nov 2021,Urban,MI,Central,"3,255,300",Frame,Hospitality,N,N
+100999,19 Nov 2021,Rural,NY,East,"4,477,175",Frame,Farming,Y,N
+101000,19 Nov 2021,Urban,NY,East,"2,395,000",Frame,Hospitality,N,Y
+100257,20 Nov 2021,Urban,NY,East,"5,550,000",Fire Resist,Apartment,Y,Y
+100258,21 Nov 2021,Urban,NY,East,"1,922,800",Metal Clad,Office Bldg,Y,Y
+101003,21 Nov 2021,Urban,NJ,East,"3,028,850",Frame,Farming,Y,N
+101005,21 Nov 2021,Rural,NY,East,"10,811,785",Metal Clad,Retail,N,N
+100208,22 Nov 2021,Urban,NY,East,"30,000",Fire Resist,Service,Y,Y
+101008,22 Nov 2021,Urban,NY,East,"15,700,000",Frame,Office Bldg,Y,Y
+101009,22 Nov 2021,Urban,WI,Midwest,"5,503,255",Masonry,Office Bldg,N,N
+100307,23 Nov 2021,Urban,WI,Midwest,"5,015,000",Masonry,Manufacturing,N,N
+101011,23 Nov 2021,Urban,MI,Central,"601,000",Frame,Other,N,N
+101012,24 Nov 2021,Urban,NJ,East,"1,563,500",Frame,Retail,Y,Y
+100271,25 Nov 2021,Rural,NY,East,"10,979,275",Frame,Farming,N,N
+100301,25 Nov 2021,Urban,NY,East,"6,198,000",Frame,Office Bldg,Y,Y
+101016,25 Nov 2021,Urban,WI,Midwest,"504,000",Frame,Apartment,N,N
+101019,26 Nov 2021,Urban,WI,Midwest,"2,211,300",Masonry,Service,Y,Y
+100336,27 Nov 2021,Rural,VT,Northeast,"6,000,902",Frame,Farming,Y,Y
+101023,27 Nov 2021,Urban,NY,East,"660,473",Frame,Apartment,N,N
+101024,27 Nov 2021,Urban,NJ,East,"4,978,985",Frame,Farming,Y,N
+100206,28 Nov 2021,Urban,NY,East,"5,213,100",Frame,Apartment,Y,Y
+100286,28 Nov 2021,Rural,NY,East,"2,336,132",Metal Clad,Farming,N,N
+100324,28 Nov 2021,Urban,NJ,East,"6,253,000",Frame,Apartment,Y,Y
+100334,28 Nov 2021,Urban,NY,East,"1,500,000",Fire Resist,Hospitality,Y,Y
+100335,28 Nov 2021,Rural,WI,Midwest,"2,984,500",Metal Clad,Farming,N,N
+101025,28 Nov 2021,Urban,WI,Midwest,"2,502,600",Masonry,Apartment,Y,Y
+101029,28 Nov 2021,Urban,NY,East,"8,115,500",Fire Resist,Apartment,Y,Y
+101031,29 Nov 2021,Rural,NY,East,"2,162,291",Frame,Farming,N,N
+100205,30 Nov 2021,Rural,WI,Midwest,"4,064,995",Masonry,Farming,N,N
+100222,30 Nov 2021,Rural,NY,East,"3,295,800",Frame,Farming,N,N
+101034,30 Nov 2021,Urban,NY,East,"9,710,700",Frame,Apartment,Y,Y
+100221,1 Dec 2021,Urban,NY,East,"2,350,000",Masonry,Apartment,Y,Y
+100246,1 Dec 2021,Urban,NJ,East,"1,807,440",Frame,Organization,Y,Y
+100298,1 Dec 2021,Urban,WI,Midwest,"3,175,400",Masonry,Office Bldg,Y,Y
+101035,1 Dec 2021,Urban,WI,Midwest,"3,741,300",Fire Resist,Apartment,Y,Y
+100333,2 Dec 2021,Rural,NY,East,"2,806,200",Frame,Farming,N,N
+101036,2 Dec 2021,Urban,VT,Northeast,"6,169,400",Frame,Apartment,Y,Y
+101037,2 Dec 2021,Urban,NY,East,"2,325,718",Metal Clad,Manufacturing,N,N
+101039,3 Dec 2021,Urban,NY,East,"245,000",Frame,Service,N,N
+101042,3 Dec 2021,Urban,WI,Midwest,"4,201,800",Frame,Farming,N,N
+101043,4 Dec 2021,Rural,WI,Midwest,"2,820,265",Frame,Farming,N,N
+101044,4 Dec 2021,Urban,NY,East,"12,220,000",Frame,Office Bldg,Y,Y
+100219,5 Dec 2021,Urban,NY,East,"1,144,300",Frame,Apartment,Y,Y
+100220,5 Dec 2021,Urban,NY,East,"4,530,000",Frame,Apartment,Y,Y
+100235,5 Dec 2021,Urban,ME,Northeast,"552,300",Frame,Apartment,N,N
+100300,5 Dec 2021,Urban,NY,East,"2,000,300",Masonry,Office Bldg,N,N
+101046,5 Dec 2021,Urban,NJ,East,"3,990,000",Frame,Apartment,Y,Y
+100366,7 Dec 2021,Urban,NJ,East,"5,850,000",Frame,Apartment,Y,Y
+101052,7 Dec 2021,Urban,NJ,East,"6,250,000",Frame,Apartment,Y,Y
+101053,7 Dec 2021,Urban,NH,Northeast,"1,327,600",Frame,Apartment,N,N
+101054,7 Dec 2021,Urban,NY,East,"1,510,000",Masonry,Hospitality,N,N
+100234,8 Dec 2021,Urban,NY,East,"3,871,000",Frame,Apartment,Y,Y
+100269,9 Dec 2021,Urban,NY,East,"513,300",Frame,Apartment,N,N
+100317,9 Dec 2021,Rural,NY,East,"2,943,800",Frame,Farming,N,N
+100318,9 Dec 2021,Urban,WI,Midwest,"3,952,500",Masonry,Manufacturing,Y,Y
+100319,9 Dec 2021,Urban,NY,East,"8,923,000",Frame,Apartment,Y,Y
+101058,9 Dec 2021,Urban,WI,Midwest,"2,900,000",Fire Resist,Apartment,Y,Y
+101061,9 Dec 2021,Urban,NY,East,"6,450,000",Frame,Office Bldg,Y,Y
+100365,10 Dec 2021,Urban,NY,East,"4,479,400",Frame,Apartment,N,N
+100374,11 Dec 2021,Urban,WI,Midwest,"2,030,600",Frame,Farming,N,N
+101066,11 Dec 2021,Rural,NY,East,"2,013,357",Frame,Farming,N,N
+101067,11 Dec 2021,Rural,NY,East,"4,017,155",Frame,Farming,N,N
+101068,11 Dec 2021,Urban,NY,East,"11,650,000",Frame,Office Bldg,Y,Y
+100244,12 Dec 2021,Urban,NY,East,"9,250,000",Frame,Apartment,Y,Y
+101069,12 Dec 2021,Rural,VT,Northeast,"2,198,800",Frame,Farming,N,N
+101070,12 Dec 2021,Rural,NY,East,"3,553,009",Frame,Farming,N,N
+101071,12 Dec 2021,Urban,WI,Midwest,"1,063,100",Masonry,Apartment,Y,Y
+101073,13 Dec 2021,Urban,NY,East,"2,854,500",Masonry,Apartment,Y,Y
+101074,13 Dec 2021,Urban,NJ,East,"3,356,200",Masonry,Construction,Y,Y
+100364,14 Dec 2021,Rural,NY,East,"1,882,600",Frame,Farming,N,N
+101075,14 Dec 2021,Rural,NY,East,"2,393,232",Frame,Farming,N,N
+101076,14 Dec 2021,Urban,NY,East,"14,678,200",Frame,Office Bldg,Y,Y
+100218,17 Dec 2021,Rural,NY,East,"5,017,360",Frame,Farming,N,N
+101083,18 Dec 2021,Urban,NY,East,"2,625,000",Frame,Apartment,Y,Y
+101088,19 Dec 2021,Urban,NY,East,"285,700",Frame,Office Bldg,N,N
+101089,19 Dec 2021,Urban,NY,East,"275,000",Fire Resist,Retail,Y,N
+101090,19 Dec 2021,Urban,NY,East,"10,396,250",Frame,Office Bldg,Y,Y
+101091,19 Dec 2021,Urban,NY,East,"27,208,210",Fire Resist,Apartment,Y,Y
+101092,19 Dec 2021,Urban,WI,Midwest,"1,740,000",Masonry,Office Bldg,N,N
+101093,19 Dec 2021,Rural,WI,Midwest,"2,464,755",Metal Clad,Farming,N,N
+100347,20 Dec 2021,Urban,NY,East,"535,000",Frame,Office Bldg,N,N
+101094,20 Dec 2021,Urban,NJ,East,"2,837,500",Frame,Manufacturing,Y,Y
+100204,21 Dec 2021,Urban,WI,Midwest,"1,400,000",Masonry,Organization,N,N
+100344,21 Dec 2021,Urban,WI,Midwest,"1,711,268",Frame,Manufacturing,N,N
+100346,21 Dec 2021,Urban,NY,East,"1,780,000",Masonry,Hospitality,Y,Y
+100391,21 Dec 2021,Urban,NY,East,"10,746,600",Frame,Apartment,Y,Y
+101096,21 Dec 2021,Urban,NY,East,"645,000",Fire Resist,Retail,N,N
+100203,22 Dec 2021,Rural,NY,East,"3,724,339",Frame,Farming,N,N
+100231,22 Dec 2021,Urban,NY,East,"12,493,000",Frame,Apartment,Y,Y
+101098,22 Dec 2021,Urban,WI,Midwest,"539,040",Frame,Retail,N,N
+101100,22 Dec 2021,Urban,NY,East,"2,159,000",Frame,Retail,N,N
+100202,23 Dec 2021,Urban,NJ,East,"3,750,000",Frame,Apartment,Y,Y
+100217,23 Dec 2021,Rural,NY,East,"100,000",Metal Clad,Farming,N,N
+101102,23 Dec 2021,Rural,NY,East,"1,121,600",Metal Clad,Farming,N,N
+100305,24 Dec 2021,Urban,NY,East,"9,000,000",Fire Resist,Apartment,Y,Y
+101104,24 Dec 2021,Urban,NY,East,"292,200",Frame,Apartment,Y,Y
+101105,24 Dec 2021,Urban,NH,Northeast,"345,000",Metal Clad,Retail,N,N
+100201,25 Dec 2021,Urban,NY,East,"11,575,700",Frame,Apartment,Y,Y
+100230,25 Dec 2021,Urban,OH,Central,"608,500",Frame,Apartment,N,N
+100295,25 Dec 2021,Urban,NJ,East,"5,114,500",Frame,Office Bldg,Y,Y
+100360,25 Dec 2021,Urban,WI,Midwest,"4,822,450",Masonry,Office Bldg,Y,Y
+100361,25 Dec 2021,Urban,NY,East,"1,125,600",Masonry,Apartment,N,N
+101107,25 Dec 2021,Urban,NY,East,"9,377,600",Frame,Apartment,Y,Y
+101109,25 Dec 2021,Rural,NY,East,"3,920,500",Frame,Farming,N,N
+100229,26 Dec 2021,Urban,NH,Northeast,"626,000",Masonry,Office Bldg,N,N
+100282,26 Dec 2021,Rural,WI,Midwest,"4,132,600",Frame,Farming,N,N
+101111,26 Dec 2021,Rural,NY,East,"6,235,057",Frame,Farming,N,N
+100400,27 Dec 2021,Rural,VT,Northeast,"1,960,000",Frame,Farming,N,N
+101113,27 Dec 2021,Rural,NY,East,"2,500,000",Metal Clad,Farming,N,N
+101114,27 Dec 2021,Urban,IL,Midwest,"3,883,300",Metal Clad,Farming,N,N
+100200,28 Dec 2021,Urban,NY,East,"1,425,000",Masonry,Apartment,N,N
+100330,28 Dec 2021,Urban,NY,East,"1,545,100",Frame,Office Bldg,Y,Y
+101115,28 Dec 2021,Urban,WI,Midwest,"1,665,100",Frame,Apartment,N,N
+101116,29 Dec 2021,Urban,NY,East,"8,245,000",Frame,Apartment,Y,Y
+100216,30 Dec 2021,Urban,NJ,East,"2,432,600",Frame,Retail,Y,Y
+100389,30 Dec 2021,Urban,NY,East,"1,480,000",Fire Resist,Hospitality,Y,Y
+101117,30 Dec 2021,Urban,NY,East,"9,050,000",Frame,Apartment,Y,Y
+101120,30 Dec 2021,Rural,NY,East,"1,480,755",Frame,Farming,N,N
+101121,31 Dec 2021,Urban,VT,Northeast,"4,101,750",Fire Resist,Office Bldg,Y,Y
+101122,31 Dec 2021,Urban,OH,Central,"1,739,100",Frame,Apartment,N,N
+101123,31 Dec 2021,Urban,NY,East,"2,250,000",Frame,Office Bldg,Y,Y
+101125,31 Dec 2021,Urban,NY,East,"16,482,200",Frame,Office Bldg,Y,Y
+101126,31 Dec 2021,Urban,WI,Midwest,"1,776,800",Frame,Farming,N,N
